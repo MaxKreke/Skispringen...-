@@ -29,6 +29,7 @@ public class Terminal : MonoBehaviour
     public List<IntegerFlag> integerFlags;
     public List<BooleanFlag> boolFlags;
     public List<Item> inventory;
+    public int life = 3;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
