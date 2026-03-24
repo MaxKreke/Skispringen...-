@@ -18,6 +18,7 @@ public class Fly : MonoBehaviour
 
     public ParticleSystem ps1;
     public ParticleSystem ps2;
+    public Terminal t;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
@@ -25,6 +26,7 @@ public class Fly : MonoBehaviour
         body = GetComponent<Rigidbody>();
         body.linearVelocity = Vector3.forward*10;
         body.linearDamping = dragMultiplier/dragReduction;
+        t = GameObject.Find("Terminal").GetComponent<Terminal>();
     }
 
     private void ApplyInputs()
@@ -61,6 +63,7 @@ public class Fly : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         Debug.LogError("Ouchie wouchie");
+        t.life--;
     }
 
     // Update is called once per frame
