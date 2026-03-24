@@ -72,6 +72,8 @@ public class Fly : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        int lvlIdx = other.gameObject.GetComponent<Location>().idx;
+        t.location = lvlIdx;
         SceneManager.LoadScene(2);
     }
 

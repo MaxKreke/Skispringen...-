@@ -31,6 +31,14 @@ public class Terminal : MonoBehaviour
     public List<Item> inventory;
     public int life = 3;
 
+    //0 = Home
+    //1 = Bakery
+    //2 = Octopus Garden
+    //3 = Bird Park
+    //4 = Shangri La
+    //5 = The Staircase
+    public int location = 0;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
