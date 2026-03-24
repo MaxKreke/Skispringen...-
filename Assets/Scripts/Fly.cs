@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Fly : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class Fly : MonoBehaviour
 
     public ParticleSystem ps1;
     public ParticleSystem ps2;
+    public ParticleSystem pps;
     public Terminal t;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -52,10 +54,12 @@ public class Fly : MonoBehaviour
         {
             ps1.Play();
             ps2.Play();
+            pps.Play();
         } else
         {
             ps1.Pause();
             ps2.Pause();
+            pps.Pause();
         }
 
     }
@@ -65,6 +69,12 @@ public class Fly : MonoBehaviour
         Debug.LogError("Ouchie wouchie");
         t.life--;
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        SceneManager.LoadScene(2);
+    }
+
 
     // Update is called once per frame
     private void Update()
