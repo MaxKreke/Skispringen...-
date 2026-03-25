@@ -5,14 +5,14 @@ public class Fly : MonoBehaviour
 {
     
     [Header("Zeppelin Tuning")]
-    public float floatiness = 1.0f;
+    //public float floatiness = 1.0f;
     public float dragReduction = 1.0f;
     public float handling = 1.0f;
     public float acceleration = 1.0f;
 
     private float acceletationMultplier = .15f;
     private float dragMultiplier = .05f;
-    private float floatinessMultiplier = 1f;
+    //private float floatinessMultiplier = 1f;
     private float rotationMultiplier = .6f;
     private float currentSpeed;
     private Rigidbody body;
@@ -86,9 +86,20 @@ public class Fly : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        int lvlIdx = other.gameObject.GetComponent<Location>().idx;
-        t.location = lvlIdx;
-        SceneManager.LoadScene(2);
+        GameObject otherO = other.gameObject;
+        string tag = otherO.tag;
+
+        if(tag == "Hoop")
+        {
+            otherO.GetComponent<Hoop>().Trigger();
+        }
+        else if (tag == "Location")
+        {
+            int lvlIdx = otherO.GetComponent<Location>().idx;
+            t.location = lvlIdx;
+            SceneManager.LoadScene(2);
+        }
+
     }
 
 
@@ -101,7 +112,6 @@ public class Fly : MonoBehaviour
     private void FixedUpdate()
     {
         currentSpeed = body.linearVelocity.magnitude;
-        Debug.Log(currentSpeed);
         ApplyInputs();
         body.linearVelocity = transform.forward * currentSpeed;
 
