@@ -27,7 +27,6 @@ public class Fly : MonoBehaviour
     {
         body = GetComponent<Rigidbody>();
         body.linearVelocity = Vector3.forward*10;
-        body.linearDamping = dragMultiplier/dragReduction;
         t = GameObject.Find("Terminal").GetComponent<Terminal>();
     }
 
@@ -50,7 +49,22 @@ public class Fly : MonoBehaviour
 
         if (accelerate) currentSpeed += acceleration* acceletationMultplier;
         if (decelerate) currentSpeed -= acceleration* acceletationMultplier;
-        if(accelerate && !decelerate)
+
+        //Calculate drag
+        float drag;
+
+        if(forward || back)
+        {
+            drag = 2*dragMultiplier / dragReduction;
+        } else
+        {
+            drag = dragMultiplier / dragReduction;
+        }
+        if (decelerate) drag = drag * acceleration * 2;
+
+        body.linearDamping = drag;
+
+        if (accelerate && !decelerate)
         {
             ps1.Play();
             ps2.Play();
