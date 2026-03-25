@@ -21,6 +21,9 @@ public class Fly : MonoBehaviour
     public ParticleSystem ps2;
     public ParticleSystem pps;
     public Terminal t;
+    public SetDirection sd;
+    public Transform target;
+    public Camera mainCam;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
@@ -28,6 +31,7 @@ public class Fly : MonoBehaviour
         body = GetComponent<Rigidbody>();
         body.linearVelocity = Vector3.forward*10;
         t = GameObject.Find("Terminal").GetComponent<Terminal>();
+        mainCam = Camera.main;
     }
 
     private void ApplyInputs()
@@ -91,7 +95,9 @@ public class Fly : MonoBehaviour
 
         if(tag == "Hoop")
         {
-            otherO.GetComponent<Hoop>().Trigger();
+            Hoop hoop = otherO.GetComponent<Hoop>();
+            target = hoop.next.transform;
+            hoop.Trigger();
         }
         else if (tag == "Location")
         {
@@ -102,11 +108,51 @@ public class Fly : MonoBehaviour
 
     }
 
+    void SetDirection()
+    {
+        if(target == null)
+        {
+            return;
+        }
+        Transform camT = mainCam.gameObject.transform;
+        Vector3 dir = (target.position - camT.position).normalized;
+        Vector3 localDir = camT.InverseTransformDirection(dir);
+
+        float absX = Mathf.Abs(localDir.x);
+        float absY = Mathf.Abs(localDir.y);
+        float absZ = Mathf.Abs(localDir.z);
+
+        //Z am größten
+        if(absZ > absY && absZ > absX)
+        {
+
+            Debug.Log(localDir + " Z");
+            if (localDir.z > 0)sd.Front();
+            else sd.Back();
+            return;
+        }
+        //Y am größten
+        else if (absX < absY)
+        {
+            Debug.Log(localDir + " Y");
+            if (localDir.y > 0)sd.Up();
+            else sd.Down();
+            return;
+        }
+        //X am größten
+        else
+        {
+            Debug.Log(localDir + " X");
+            if (localDir.x > 0)sd.Right();
+            else sd.Left();
+            return;
+        }
+    }
 
     // Update is called once per frame
     private void Update()
     {
-        
+        SetDirection();
     }
 
     private void FixedUpdate()
