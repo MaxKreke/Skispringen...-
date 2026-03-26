@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Race : MonoBehaviour
 {
+    public bool bidirectional;
 
     void Start(){
         Transform prev = null;

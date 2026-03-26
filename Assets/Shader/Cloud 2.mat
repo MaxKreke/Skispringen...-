@@ -52,8 +52,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _CloudScale: 400
-    - _Cloud_Alpha: 2
-    - _Cloud_Power: 1.9
+    - _Cloud_Alpha: 1.5
+    - _Cloud_Power: 1.5
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:

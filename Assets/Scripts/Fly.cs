@@ -125,8 +125,6 @@ public class Fly : MonoBehaviour
         //Z am größten
         if(absZ > absY && absZ > absX)
         {
-
-            Debug.Log(localDir + " Z");
             if (localDir.z > 0)sd.Front();
             else sd.Back();
             return;
@@ -134,7 +132,6 @@ public class Fly : MonoBehaviour
         //Y am größten
         else if (absX < absY)
         {
-            Debug.Log(localDir + " Y");
             if (localDir.y > 0)sd.Up();
             else sd.Down();
             return;
@@ -142,7 +139,6 @@ public class Fly : MonoBehaviour
         //X am größten
         else
         {
-            Debug.Log(localDir + " X");
             if (localDir.x > 0)sd.Right();
             else sd.Left();
             return;
