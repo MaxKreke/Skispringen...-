@@ -39,6 +39,24 @@ public class Terminal : MonoBehaviour
     //5 = The Staircase
     public int location = 0;
 
+    //CharacterID:
+    //0 = Nobody(empty)
+    //1 = Jimmy
+    //2 = Robert
+    //3 = John
+    //4 = Also John
+    //5 = Pete
+    public int[] characterAtLocation =
+    {
+        2,2,2,2,2
+    };
+
+    public int GetCharacter()
+    {
+        if (location <= 0) return 0;
+        return characterAtLocation[location-1];
+    }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
