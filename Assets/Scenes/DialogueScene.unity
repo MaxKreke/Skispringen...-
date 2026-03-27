@@ -502,11 +502,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   tex:
-  - {fileID: 2800000, guid: 1d48ed0009b3dfd439b96a88b1f12c2e, type: 3}
+  - {fileID: 2800000, guid: 5cde3ba672079d743a5e869e4a843311, type: 3}
   - {fileID: 2800000, guid: e92fb12afbdba144e82252e217014ebe, type: 3}
   - {fileID: 2800000, guid: 8485defd7c1c3b74786dc9f2c3811429, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2800000, guid: 51fdb231536fe004cb25c59eb4a399c9, type: 3}
+  - {fileID: 2800000, guid: 85025aa2982df3249b0a13233d977173, type: 3}
 --- !u!1 &1623158895
 GameObject:
   m_ObjectHideFlags: 0
