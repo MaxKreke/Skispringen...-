@@ -44,7 +44,7 @@ public class TextManager : MonoBehaviour
         Debug.Log("NEXT");
         if(current.next == null)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 

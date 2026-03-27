@@ -30,6 +30,7 @@ public class Terminal : MonoBehaviour
     public List<BooleanFlag> boolFlags;
     public List<Item> inventory;
     public int life = 3;
+    public int tutorialStage;
 
     //0 = Home
     //1 = Bakery

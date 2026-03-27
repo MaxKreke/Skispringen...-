@@ -29,21 +29,35 @@ public class Fly : MonoBehaviour
     private void Start()
     {
         body = GetComponent<Rigidbody>();
-        body.linearVelocity = Vector3.forward*10;
+
         t = GameObject.Find("Terminal").GetComponent<Terminal>();
+        if(t.tutorialStage > 0)body.linearVelocity = Vector3.forward * 10;
         mainCam = Camera.main;
     }
 
     private void ApplyInputs()
     {
+        bool accelerate = Input.GetMouseButton(0);
+        bool decelerate = Input.GetMouseButton(1);
+
         bool forward = (Input.GetKey("w") || Input.GetKey("u") || Input.GetKey("up"));
         bool back = (Input.GetKey("s") || Input.GetKey("j") || Input.GetKey("down"));
+
 
         bool right = (Input.GetKey("d") || Input.GetKey("k") || Input.GetKey("right"));
         bool left = (Input.GetKey("a") || Input.GetKey("h") || Input.GetKey("left"));
 
-        bool accelerate = Input.GetMouseButton(0);
-        bool decelerate = Input.GetMouseButton(1);
+        //Limited Tutorial Controls
+        if (t.tutorialStage < 1)
+        {
+            forward = false;
+            back = false;
+        }
+        if (t.tutorialStage < 3)
+        {
+            right = false;
+            left = false;
+        }
 
         float rotSpeed = rotationMultiplier * handling;
         if(forward) transform.Rotate(rotSpeed, 0f, 0f, Space.Self);
@@ -103,7 +117,11 @@ public class Fly : MonoBehaviour
         {
             int lvlIdx = otherO.GetComponent<Location>().idx;
             t.location = lvlIdx;
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
+        }
+        else if (tag == "Tutorial")
+        {
+            GameObject.Find("Tutorial").GetComponent<Tutorial>().Next();
         }
 
     }
@@ -156,6 +174,11 @@ public class Fly : MonoBehaviour
         currentSpeed = body.linearVelocity.magnitude;
         ApplyInputs();
         body.linearVelocity = transform.forward * currentSpeed;
+
+    }
+
+    public void Freeze()
+    {
 
     }
 }

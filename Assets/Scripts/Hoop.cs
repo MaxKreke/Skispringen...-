@@ -5,7 +5,7 @@ public class Hoop : MonoBehaviour
     public GameObject zeppelin;
     public GameObject next;
 
-    void Start()
+    public void Start()
     {
         zeppelin = GameObject.Find("Zeppelin");
         Vector3 other = zeppelin.transform.position;
