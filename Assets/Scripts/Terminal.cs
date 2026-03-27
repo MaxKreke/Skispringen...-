@@ -29,8 +29,8 @@ public class Terminal : MonoBehaviour
     public List<IntegerFlag> integerFlags;
     public List<BooleanFlag> boolFlags;
     public List<Item> inventory;
-    public int life = 3;
     public int tutorialStage;
+    public float speedRunTime;
 
     //0 = Home
     //1 = Bakery

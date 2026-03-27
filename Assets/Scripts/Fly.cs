@@ -98,8 +98,7 @@ public class Fly : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.LogError("Ouchie wouchie");
-        t.life--;
+        SceneManager.LoadScene(2);
     }
 
     void OnTriggerEnter(Collider other)
