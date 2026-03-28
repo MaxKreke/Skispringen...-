@@ -32,7 +32,5 @@ public class FlyUI : MonoBehaviour
     {
         speed.text = "Speed: " + body.linearVelocity.magnitude + "m/s";
         height.text = "Height: " + player.position.y + "m";
-
     }
-
 }

@@ -25,6 +25,22 @@ public class Fly : MonoBehaviour
     public Transform target;
     public Camera mainCam;
 
+    //0 = Studio
+    //1 = Bakery
+    //2 = Octopus Garden
+    //3 = Bird Park
+    //4 = Shangri La
+    //5 = The Staircase
+    private Vector3[] locationCoordinates =
+    {
+        new Vector3(0,20,0),
+        new Vector3(4939,3013,-6612),
+        new Vector3(-4958,21,-6616),
+        new Vector3(-7931,4024,2008),
+        new Vector3(-6,8040,8072),
+        new Vector3(7877,9987,2019),
+    };
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
@@ -33,6 +49,8 @@ public class Fly : MonoBehaviour
         t = GameObject.Find("Terminal").GetComponent<Terminal>();
         if(t.tutorialStage > 0)body.linearVelocity = Vector3.forward * 10;
         mainCam = Camera.main;
+        transform.position = locationCoordinates[t.location];
+        transform.LookAt(locationCoordinates[t.targetLocation]);
     }
 
     private void ApplyInputs()

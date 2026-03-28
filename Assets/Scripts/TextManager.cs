@@ -10,13 +10,19 @@ public class TextManager : MonoBehaviour
     public TextMeshProUGUI charName;
     public DialogueMessage current;
 
+    //0 = Nobody(empty)
+    //1 = Paige
+    //2 = Robbie
+    //3 = Bonzo
+    //4 = JP
+    //5 = Pete
     public string[] nameList =
     {
         " ",
-        "Jimmy",
-        "Robert",
-        "John",
-        "Other John",
+        "Paige",
+        "Robbie",
+        "Bonzo",
+        "JP",
         "Pete"
     };
 
@@ -29,7 +35,7 @@ public class TextManager : MonoBehaviour
         int location = t.location;
         charName.text = nameList[t.GetCharacter()];
         if (location <= 0) return;
-        current = dc.transform.GetChild(location-1).GetChild(0).GetComponent<DialogueMessage>();
+        current = dc.transform.GetChild(location).GetChild(0).GetComponent<DialogueMessage>();
         SetText();
     }
 

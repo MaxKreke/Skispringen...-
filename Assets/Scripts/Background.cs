@@ -15,8 +15,7 @@ public class Background : MonoBehaviour
         if (terminal)
         {
             t = terminal.GetComponent<Terminal>();
-            int location = t.location;
-            if(location > 0)this.GetComponent<RawImage>().texture = tex[location-1];
+            this.GetComponent<RawImage>().texture = tex[t.location];
         }
     }
 

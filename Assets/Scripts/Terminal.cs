@@ -32,20 +32,20 @@ public class Terminal : MonoBehaviour
     public int tutorialStage;
     public float speedRunTime;
 
-    //0 = Home
+    //0 = Studio
     //1 = Bakery
     //2 = Octopus Garden
     //3 = Bird Park
     //4 = Shangri La
     //5 = The Staircase
     public int location = 0;
-
+    public int targetLocation = -1;
     //CharacterID:
     //0 = Nobody(empty)
-    //1 = Jimmy
-    //2 = Robert
-    //3 = John
-    //4 = Also John
+    //1 = Paige
+    //2 = Robbie
+    //3 = Bonzo
+    //4 = JP
     //5 = Pete
     public int[] characterAtLocation =
     {
