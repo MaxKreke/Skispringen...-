@@ -7,7 +7,7 @@ public class DialogueOption : MonoBehaviour
     public string text;
     public Action callback;
     public Func<Terminal, bool> requirement;
-    public DialogueMessage next;
+    public Dialogue next;
 
     public bool CheckRequirement()
     {

@@ -37,7 +37,7 @@ public class Tutorial : MonoBehaviour
                 break;
             case 4:
                 t.tutorialStage++;
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(3);
                 break;
             default: 
                 break;

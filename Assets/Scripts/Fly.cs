@@ -47,10 +47,13 @@ public class Fly : MonoBehaviour
         body = GetComponent<Rigidbody>();
 
         t = GameObject.Find("Terminal").GetComponent<Terminal>();
-        if(t.tutorialStage > 0)body.linearVelocity = Vector3.forward * 10;
+        if (t.tutorialStage > 0)
+        {
+            body.linearVelocity = Vector3.forward * 10;
+            transform.position = locationCoordinates[t.location];
+            transform.LookAt(locationCoordinates[t.targetLocation]);
+        }
         mainCam = Camera.main;
-        transform.position = locationCoordinates[t.location];
-        transform.LookAt(locationCoordinates[t.targetLocation]);
     }
 
     private void ApplyInputs()

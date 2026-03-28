@@ -1799,13 +1799,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4012d12d56a12f4eb6f5745da7eda04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Terminal
-  integerFlags: []
+  integerFlags:
+  - key: Passion
+    value: 1
+  - key: Cool
+    value: 1
+  - key: Drugs
+    value: 1
+  - key: Guitar
+    value: 1
   boolFlags: []
   inventory: []
-  life: 3
   tutorialStage: 0
+  speedRunTime: 0
   location: 0
-  characterAtLocation: 0200000002000000020000000200000002000000
+  targetLocation: -1
+  characterAtLocation: 0300000000000000010000000400000002000000
 --- !u!1 &1498468325
 GameObject:
   m_ObjectHideFlags: 0

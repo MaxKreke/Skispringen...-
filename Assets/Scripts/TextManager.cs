@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class TextManager : MonoBehaviour
 {
@@ -8,7 +7,9 @@ public class TextManager : MonoBehaviour
     public DialogueCatalogue dc;
     public TextMeshProUGUI text;
     public TextMeshProUGUI charName;
-    public DialogueMessage current;
+    public Dialogue current;
+    public CharacterPortrait charPort;
+    public DynamicOptionsMenu dom;
 
     //0 = Nobody(empty)
     //1 = Paige
@@ -16,14 +17,16 @@ public class TextManager : MonoBehaviour
     //3 = Bonzo
     //4 = JP
     //5 = Pete
-    public string[] nameList =
+    //6 = You
+    private string[] nameList =
     {
         " ",
         "Paige",
         "Robbie",
         "Bonzo",
         "JP",
-        "Pete"
+        "Pete",
+        "You",
     };
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -31,27 +34,57 @@ public class TextManager : MonoBehaviour
     {
         GameObject terminal = GameObject.Find("Terminal");
         if (terminal == null) return;
+
+        Debug.Log("Got Terminal.");
+
         t = terminal.GetComponent<Terminal>();
         int location = t.location;
-        charName.text = nameList[t.GetCharacter()];
-        if (location <= 0) return;
-        current = dc.transform.GetChild(location).GetChild(0).GetComponent<DialogueMessage>();
+        SetCharName(t.GetCharacter());
+
+        Debug.Log(location);
+
+        if (location < 0) return;
+
+        Debug.Log("Here");
+        Debug.Log(dc.transform.GetChild(location).GetChild(0));
+        current = dc.transform.GetChild(location).GetChild(0).GetComponent<Dialogue>();
+        Debug.Log(current);
+
         SetText();
     }
 
-    private void SetText()
+    public void SetText()
     {
         if (current == null) return;
-        text.text = current.text;
+        text.text = current.GetText();
+    }
+
+    public void TrySetCharacter()
+    {
+        int character = current.TryGetCharacter();
+        if (character == -1) return;
+        SetCharPort(character);
+        SetCharName(character);
+    }
+
+    public void SetCharPort(int idx)
+    {
+        charPort.Set(idx);
+    }
+
+    public void SetCharName(int idx)
+    {
+        charName.text = nameList[idx];
     }
 
     public void Next()
     {
-        Debug.Log("NEXT");
-        if(current.next == null)
-        {
-            SceneManager.LoadScene(1);
-        }
+        current.Next(this);
     }
 
+    public void ShowOptions(DialogueOption[] data)
+    {
+        dom.gameObject.SetActive(true);
+        dom.CreateButtons(data);
+    }
 }

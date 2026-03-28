@@ -15,7 +15,14 @@ public class TransitionManager : MonoBehaviour
     public GameObject itemSlotPrefab; 
     public Transform inventoryContainer; 
 
-    private string[] charNames = { "Nobody", "Jimmy", "Robert", "John", "John", "Pete" };
+    private string[] charNames = {         
+        " ",
+        "Paige",
+        "Robbie",
+        "Bonzo",
+        "JP",
+        "Pete",
+    };
 
     void Start()
     {

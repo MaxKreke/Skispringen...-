@@ -209,7 +209,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -44, y: -78.969}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &20855137
 MonoBehaviour:
@@ -1977,9 +1977,9 @@ RectTransform:
   m_Father: {fileID: 532392960}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 421.99997, y: 306.5}
-  m_SizeDelta: {x: 844, y: 562}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1314655056
 GameObject:
@@ -1997,7 +1997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1314655057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2037,9 +2037,10 @@ MonoBehaviour:
   inventory:
   - itemName: Bakery Key
     itemImage: {fileID: 10900, guid: 0000000000000000f000000000000000, type: 0}
-  life: 3
   tutorialStage: 0
+  speedRunTime: 0
   location: 1
+  targetLocation: -1
   characterAtLocation: 0200000002000000020000000200000002000000
 --- !u!4 &1314655058
 Transform:
@@ -2563,9 +2564,9 @@ RectTransform:
   m_Father: {fileID: 532392960}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 421.99997, y: 306.5}
-  m_SizeDelta: {x: 800.00006, y: 532.7015}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1490651496
 GameObject:

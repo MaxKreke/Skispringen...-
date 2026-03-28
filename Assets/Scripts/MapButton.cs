@@ -14,7 +14,7 @@ public class MapButton : MonoBehaviour
         if (terminal != null)
         {
             // 2. Ziel im Terminal setzen (Variable heißt 'Location')
-            terminal.location = targetIndex;
+            terminal.targetLocation = targetIndex;
             Debug.Log("Ziel auf " + targetIndex + " gesetzt.");
             
             // 3. Die Flug-Szene laden
