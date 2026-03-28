@@ -1981,82 +1981,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1314655056
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1314655058}
-  - component: {fileID: 1314655057}
-  m_Layer: 0
-  m_Name: Terminal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1314655057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1314655056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4012d12d56a12f4eb6f5745da7eda04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Terminal
-  integerFlags:
-  - key: Money
-    value: 0
-  - key: character_trust_0
-    value: 0
-  - key: character_trust_1
-    value: 0
-  - key: character_trust_2
-    value: 0
-  - key: character_trust_3
-    value: 0
-  - key: character_trust_4
-    value: 0
-  - key: personality_trait_0
-    value: 0
-  - key: personality_trait_1
-    value: 0
-  - key: personality_trait_2
-    value: 0
-  - key: personality_trait_3
-    value: 0
-  - key: personality_trait_4
-    value: 0
-  boolFlags: []
-  inventory:
-  - itemName: Bakery Key
-    itemImage: {fileID: 10900, guid: 0000000000000000f000000000000000, type: 0}
-  tutorialStage: 0
-  speedRunTime: 0
-  location: 1
-  targetLocation: -1
-  characterAtLocation: 0200000002000000020000000200000002000000
---- !u!4 &1314655058
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1314655056}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.29174, y: -0, z: -7.31852}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1342673258
 GameObject:
   m_ObjectHideFlags: 0
@@ -2605,7 +2529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 153}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1490651498
@@ -3180,8 +3104,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -183}
-  m_SizeDelta: {x: 0, y: -11.7384}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588706839
 MonoBehaviour:
@@ -3271,7 +3195,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -13.415295, z: 0, w: 3.3538237}
+  m_margin: {x: 0, y: 0.38186267, z: 0, w: 0.5592518}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3706,13 +3630,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768035525}
   m_CullTransparentMesh: 1
+--- !u!1001 &1839028142
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5518280741785634097, guid: 81af291c9ccbe1042a3df4cf4922802a, type: 3}
+      propertyPath: m_Name
+      value: TerminalCheckpoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518280741785634097, guid: 81af291c9ccbe1042a3df4cf4922802a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973350020957552824, guid: 81af291c9ccbe1042a3df4cf4922802a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 752.72754
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973350020957552824, guid: 81af291c9ccbe1042a3df4cf4922802a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973350020957552824, guid: 81af291c9ccbe1042a3df4cf4922802a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1780.4203
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973350020957552824, guid: 81af291c9ccbe1042a3df4cf4922802a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973350020957552824, guid: 81af291c9ccbe1042a3df4cf4922802a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973350020957552824, guid: 81af291c9ccbe1042a3df4cf4922802a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973350020957552824, guid: 81af291c9ccbe1042a3df4cf4922802a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973350020957552824, guid: 81af291c9ccbe1042a3df4cf4922802a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973350020957552824, guid: 81af291c9ccbe1042a3df4cf4922802a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973350020957552824, guid: 81af291c9ccbe1042a3df4cf4922802a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 81af291c9ccbe1042a3df4cf4922802a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1663725807}
   - {fileID: 95263414}
-  - {fileID: 1314655058}
   - {fileID: 532392960}
   - {fileID: 1342673261}
   - {fileID: 17906430}
+  - {fileID: 1839028142}

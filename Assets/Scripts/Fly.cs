@@ -47,6 +47,11 @@ public class Fly : MonoBehaviour
         body = GetComponent<Rigidbody>();
 
         t = GameObject.Find("Terminal").GetComponent<Terminal>();
+
+        dragReduction = (int)t.integerFlags[3].value;
+        handling = (int)t.integerFlags[1].value;
+        acceleration = (int)t.integerFlags[0].value;
+
         if (t.tutorialStage > 0)
         {
             body.linearVelocity = Vector3.forward * 10;

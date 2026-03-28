@@ -13,7 +13,7 @@ public class IntegerFlag
 public class BooleanFlag
 {
     public string key;
-    public int value;
+    public bool value;
 }
 
 [Serializable]
@@ -23,12 +23,24 @@ public class Item
     public Texture itemImage;
 }
 
+[Serializable]
+public class DialogueSubScene
+{
+    public string title;
+    public string id;
+    public int location;
+    public bool needAllRequirements;
+    public int[] necessaryBoolFlags;
+    public int[] necessaryIntFlags;
+}
+
 public class Terminal : MonoBehaviour
 {
 
     public List<IntegerFlag> integerFlags;
     public List<BooleanFlag> boolFlags;
     public List<Item> inventory;
+    public List<DialogueSubScene> subScenes;
     public int tutorialStage;
     public float speedRunTime;
 
@@ -52,10 +64,39 @@ public class Terminal : MonoBehaviour
         2,2,2,2,2
     };
 
+    public List<DialogueSubScene> GetSubScenesThatMeetRequirements()
+    {
+        List<DialogueSubScene> returnList = new List<DialogueSubScene>();
+        foreach (DialogueSubScene dss in subScenes) {
+            bool checksOut = true;
+
+            //TO DO!!!
+            //Run all checks
+
+            if(checksOut)returnList.Add(dss);
+        }
+
+        return returnList;
+    }
+
     public int GetCharacter()
     {
         if (location <= 0) return 0;
         return characterAtLocation[location-1];
+    }
+
+    public bool CheckFlag(string key)
+    {
+        for (int i = 0; i < boolFlags.Count; i++)
+        {
+            if (boolFlags[i].key == key)
+            {
+                return boolFlags[i].value;
+            }
+        }
+
+        // default if flag doesn't exist
+        return false;
     }
 
 
