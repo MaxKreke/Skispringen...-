@@ -1,95 +1,127 @@
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI; // Wichtig für die Item-Bilder!
+using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class TransitionManager : MonoBehaviour
 {
-    public TextMeshProUGUI moneyText;
-    public TextMeshProUGUI trustText;
-    
-    [Header("Goal Panel Settings")]
+    [Header("Terminal Connection")]
+    public Terminal terminal;
+
+    [Header("UI Stats Panel (New Social Flags)")]
+    public TextMeshProUGUI passionText;
+    public TextMeshProUGUI coolText;
+    public TextMeshProUGUI drugsText;
+    public TextMeshProUGUI guitarText;
+
+    [Header("Goal Panel (Mission Update)")]
     public GameObject goalPanel;
     public TextMeshProUGUI goalDescription;
 
-    [Header("Inventory Settings")] // Diese Felder haben dir gefehlt!
-    public GameObject itemSlotPrefab; 
-    public Transform inventoryContainer; 
+    [Header("Map Buttons")]
+    public List<MapButton> allMapButtons; 
 
-    private string[] charNames = {         
-        " ",
-        "Paige",
-        "Robbie",
-        "Bonzo",
-        "JP",
-        "Pete",
-    };
+    private string[] charNames = { " ", "Paige", "Robbie", "Bonzo", "JP", "Pete" };
 
     void Start()
     {
-        Terminal terminal = Object.FindAnyObjectByType<Terminal>();
-        
+        // Terminal suchen, falls nicht im Inspector zugewiesen
+        if (terminal == null) terminal = Object.FindAnyObjectByType<Terminal>();
+
         if (terminal != null)
         {
             goalPanel.SetActive(true);
-
-            // Hier prüfen wir auf Max' Logik: Start oder nach Dialog
-            // Falls er den Bool im Repo "isFirstStart" genannt hat, hier anpassen:
-            if (terminal.location == 0) 
-            {
-                int targetID = terminal.characterAtLocation[0]; 
-                goalDescription.text = "NEUER RUN GESTARTET\n\nZiel: Freundschaft mit " + charNames[targetID];
-                ClearInventoryUI();
-            }
-            else 
-            {
-                int lastCharID = terminal.GetCharacter();
-                int trust = GetValue(terminal, "character_trust_" + lastCharID);
-                
-                goalDescription.text = "MISSION UPDATE\n\n" + charNames[lastCharID] + " Vertrauen: " + trust + "%";
-                UpdateInventoryUI(terminal); // Hier werden die Bilder geladen
-            }
+            SetupGoalDescription();
+            RefreshMapUI();
         }
-        UpdateUI();
     }
 
-    void UpdateInventoryUI(Terminal terminal)
+    // Kombiniert: Alte Missions-Logik + Neue Stats/Buttons
+    public void RefreshMapUI()
     {
-        ClearInventoryUI();
-        foreach (var itemData in terminal.inventory)
+        UpdateSocialStats();
+        UpdateDynamicButtons();
+    }
+
+    private void SetupGoalDescription()
+    {
+        string storyLog = "<b>CITY RECORD:</b>\n\n";
+        bool anyEvent = false;
+
+        // Teamwork vs Selfishness
+        if (GetBoolFlag("EncouragedTeamwork")) { storyLog += "• Unity is growing.\n"; anyEvent = true; }
+        if (GetBoolFlag("EncouragedSelfishness")) { storyLog += "• Discord is spreading.\n"; anyEvent = true; }
+        if (GetBoolFlag("SuggestedSoloCareer")) { storyLog += "• A solo path was chosen.\n"; anyEvent = true; }
+
+        // Pete's Path
+        if (GetBoolFlag("SoberPete")) { storyLog += "• Pete remains sober.\n"; anyEvent = true; }
+        if (GetBoolFlag("EncourageAlcoholism")) { storyLog += "• Pete has relapsed.\n"; anyEvent = true; }
+        if (GetBoolFlag("EncourageModeration")) { storyLog += "• Pete is finding balance.\n"; anyEvent = true; }
+
+        // The Deal
+        if (GetBoolFlag("ArrangeDrugDeal")) { storyLog += "• The deal is in motion.\n"; anyEvent = true; }
+        if (GetBoolFlag("GaveHeroin")) { storyLog += "• The deal turned dark.\n"; anyEvent = true; }
+        if (GetBoolFlag("GaveSugar")) { storyLog += "• You pulled a prank.\n"; anyEvent = true; }
+
+        // Robbie's Guitar
+        if (GetBoolFlag("ReturnedGuitar")) { storyLog += "• The guitar is home.\n"; anyEvent = true; }
+        else if (GetBoolFlag("GotGuitar")) { storyLog += "• You hold the guitar.\n"; anyEvent = true; }
+
+        // Personal
+        if (GetBoolFlag("LearnMeditation")) { storyLog += "• You found inner peace.\n"; anyEvent = true; }
+
+        if (!anyEvent) {
+            storyLog += "The streets are quiet. Your choices will write the story.";
+        }
+
+        goalDescription.text = storyLog;
+    }
+
+    private void UpdateSocialStats()
+    {
+        if (terminal == null) return;
+
+        // Wir prüfen erst, ob die Felder überhaupt zugewiesen sind
+        if (passionText != null) passionText.text = "Passion: " + GetFlagValue("Passion");
+        if (coolText != null) coolText.text = "Cool: " + GetFlagValue("Cool");
+        if (drugsText != null) drugsText.text = "Drugs: " + GetFlagValue("Drugs");
+        if (guitarText != null) guitarText.text = "Guitar: " + GetFlagValue("Guitar");
+    }
+
+    private void UpdateDynamicButtons()
+    {
+        var allowedScenes = terminal.GetSubScenesThatMeetRequirements();
+
+        foreach (MapButton mapBtn in allMapButtons)
         {
-            GameObject newSlot = Instantiate(itemSlotPrefab, inventoryContainer);
-            // Achte auf das Leerzeichen zwischen Item und Icon/Name!
-            newSlot.transform.Find("Item Icon").GetComponent<RawImage>().texture = itemData.itemImage;
-            newSlot.transform.Find("Item Name").GetComponent<TextMeshProUGUI>().text = itemData.itemName;
+            DialogueSubScene foundScene = allowedScenes.Find(s => s.location == mapBtn.targetIndex);
+            Button btnComp = mapBtn.GetComponent<Button>();
+
+            if (foundScene != null)
+            {
+                if (btnComp != null) btnComp.interactable = true;
+                if (mapBtn.titleText != null) mapBtn.titleText.text = foundScene.title;
+            }
+            else
+            {
+                if (btnComp != null) btnComp.interactable = false;
+                if (mapBtn.titleText != null) mapBtn.titleText.text = "";
+            }
         }
     }
 
-    void ClearInventoryUI()
+    private int GetFlagValue(string keyName)
     {
-        if (inventoryContainer == null) return;
-        foreach (Transform child in inventoryContainer) Destroy(child.gameObject);
+        var flag = terminal.integerFlags.Find(f => f.key == keyName);
+        return flag != null ? flag.value : 0;
     }
 
     public void CloseGoalPanel() { goalPanel.SetActive(false); }
 
-    public void UpdateUI()
-    {
-        Terminal terminal = Object.FindAnyObjectByType<Terminal>();
-        if (terminal != null)
-        {
-            moneyText.text = "Money: $" + GetValue(terminal, "Money");
-            int currentCharID = terminal.GetCharacter();
-            trustText.text = "Trust: " + GetValue(terminal, "character_trust_" + currentCharID);
-        }
-    }
-
-    private int GetValue(Terminal terminal, string keyName)
-    {
-        if (terminal.integerFlags == null) return 0;
-        foreach (var flag in terminal.integerFlags)
-        {
-            if (flag.key == keyName) return flag.value;
-        }
-        return 0;
-    }
+    private bool GetBoolFlag(string keyName)
+{
+    if (terminal == null || terminal.boolFlags == null) return false;
+    var flag = terminal.boolFlags.Find(f => f.key == keyName);
+    return flag != null ? flag.value : false;
+}
 }

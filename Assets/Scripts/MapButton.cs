@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class MapButton : MonoBehaviour
 {
     // Die Nummer des Ziels (0 = Shangri La, etc.)
     public int targetIndex;
-
+    public TextMeshProUGUI titleText;
     public void OnClick()
     {
         // 1. Terminal finden
