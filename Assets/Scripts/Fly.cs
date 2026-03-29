@@ -57,6 +57,10 @@ public class Fly : MonoBehaviour
             body.linearVelocity = Vector3.forward * 10;
             transform.position = locationCoordinates[t.location];
             transform.LookAt(locationCoordinates[t.targetLocation]);
+            if (target != null)
+            {
+                target.gameObject.GetComponent<Hoop>().Start();
+            }
         }
         mainCam = Camera.main;
     }
