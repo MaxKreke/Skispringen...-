@@ -43,6 +43,7 @@ public class Terminal : MonoBehaviour
     public List<DialogueSubScene> subScenes;
     public int tutorialStage;
     public float speedRunTime;
+    public int ending = -1;
 
     //0 = Studio
     //1 = Bakery

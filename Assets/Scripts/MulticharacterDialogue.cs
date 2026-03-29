@@ -24,6 +24,7 @@ public class MulticharacterDialogue : Dialogue
     public int state = 0;
     public int setsFlag = -1;
     public int gainsStat = -1;
+    public int isEnding = -1;
 
     public override bool HasNext()
     {
@@ -76,7 +77,11 @@ public class MulticharacterDialogue : Dialogue
             EndScene();
             return;
         }
-
+        if(isEnding >= 0){
+            t.ending = isEnding;
+            EndGame();
+            return;
+        }
         EndScene();
     }
 

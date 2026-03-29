@@ -27,6 +27,11 @@ public class Dialogue : MonoBehaviour
         SceneManager.LoadScene(4);
     }
 
+    protected void EndGame()
+    {
+        SceneManager.LoadScene(5);
+    }
+
     protected void PassOptions(TextManager tm)
     {
         DialogueOption[] options = GetComponentsInChildren<DialogueOption>();
