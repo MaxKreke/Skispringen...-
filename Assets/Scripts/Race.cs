@@ -2,19 +2,29 @@ using UnityEngine;
 
 public class Race : MonoBehaviour
 {
-    public bool bidirectional;
-
-    void Start(){
+    public Transform Initialize(bool forward){
+        Transform first = null;
         Transform prev = null;
-        foreach(Transform t in transform)
+
+        int start = forward ? 0 : transform.childCount-1;
+        int end = forward ? transform.childCount : 0;
+        int step = forward ? 1 : -1;
+
+        for (int i = start; forward? i<end:i>=end ; i+=step)
         {
+            Transform t = transform.GetChild(i);
+
+            if (first == null) first = t;
+
             if(prev != null){
                 prev.gameObject.GetComponent<Hoop>().next = t.gameObject;
             }
             t.gameObject.SetActive(false);
             prev = t;
         }
-        if(transform.childCount>0)transform.GetChild(0).gameObject.SetActive(true);
+
+        first.gameObject.SetActive(true);
+        return first;
     }
 
 }

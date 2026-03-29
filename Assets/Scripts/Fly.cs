@@ -140,6 +140,11 @@ public class Fly : MonoBehaviour
         }
         else if (tag == "Location")
         {
+            if (otherO.transform != target)
+            {
+                SceneManager.LoadScene(2);
+                return;
+            }
             int lvlIdx = otherO.GetComponent<Location>().idx;
             t.location = lvlIdx;
             SceneManager.LoadScene(3);
