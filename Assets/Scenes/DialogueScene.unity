@@ -156,6 +156,59 @@ Transform:
   - {fileID: 1784526291}
   m_Father: {fileID: 1182218642}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &119508988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 119508989}
+  - component: {fileID: 119508990}
+  m_Layer: 0
+  m_Name: R1.4c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &119508989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119508988}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1767229804}
+  - {fileID: 909781599}
+  m_Father: {fileID: 1301044891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &119508990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119508988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5fd1cffcd1fa443a75183a67b46a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MulticharacterDialogue
+  next: {fileID: 0}
+  dialogueContent:
+  - character: 2
+    words: So what am I supposed to do about it?
+  state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &128938544
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +260,63 @@ MonoBehaviour:
   - character: 6
     words: "Right, I\u2019ll, uh, do that."
   state: 0
+  setsFlag: -1
+  gainsStat: -1
+--- !u!1 &177299811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 177299812}
+  - component: {fileID: 177299813}
+  m_Layer: 0
+  m_Name: R1.2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &177299812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177299811}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1105380672}
+  - {fileID: 896665738}
+  m_Father: {fileID: 1301044891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &177299813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177299811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5fd1cffcd1fa443a75183a67b46a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MulticharacterDialogue
+  next: {fileID: 0}
+  dialogueContent:
+  - character: 0
+    words: "After he while Rob finally notices you\u2019re here and turns to you."
+  - character: 2
+    words: "It\u2019s magnificent, isn\u2019t it?"
+  state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &203791243
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,6 +474,114 @@ MonoBehaviour:
   current: {fileID: 0}
   charPort: {fileID: 1511995530}
   dom: {fileID: 1359712674}
+--- !u!1 &227052578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 227052579}
+  - component: {fileID: 227052580}
+  m_Layer: 0
+  m_Name: R1.5b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &227052579
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227052578}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301044891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &227052580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227052578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5fd1cffcd1fa443a75183a67b46a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MulticharacterDialogue
+  next: {fileID: 0}
+  dialogueContent:
+  - character: 2
+    words: ' In your dreams, maybe.'
+  - character: 2
+    words: ' In your dreams, maybe.'
+  state: 0
+  setsFlag: 0
+  gainsStat: -1
+--- !u!1 &238389500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 238389501}
+  - component: {fileID: 238389502}
+  m_Layer: 0
+  m_Name: R1.4b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &238389501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238389500}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1850101674}
+  - {fileID: 1090368271}
+  m_Father: {fileID: 1301044891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &238389502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238389500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5fd1cffcd1fa443a75183a67b46a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MulticharacterDialogue
+  next: {fileID: 0}
+  dialogueContent:
+  - character: 2
+    words: "They\u2019re infuriating."
+  - character: 2
+    words: "I\u2019d be better off on my own."
+  state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &266866820
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +631,8 @@ MonoBehaviour:
   - character: 6
     words: Hi Paige
   state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &291599643
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +684,57 @@ MonoBehaviour:
   - character: 6
     words: "I\u2019ll, uh, figure something out."
   state: 0
+  setsFlag: -1
+  gainsStat: -1
+--- !u!1 &304969716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 304969717}
+  - component: {fileID: 304969718}
+  m_Layer: 0
+  m_Name: GameObject (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &304969717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304969716}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1735206335}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &304969718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304969716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df92caf4580fada4681f93ce4a649d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  text: "\u201DMaybe you need a shared vision.\u201D"
+  statRequirement: -1
+  flagRequirement: -1
+  flagRequirementLevel: 5
+  next: {fileID: 998316788}
 --- !u!1 &312058148
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +788,8 @@ MonoBehaviour:
   - character: 0
     words: They leave, each separately.
   state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &312457712
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,6 +966,8 @@ MonoBehaviour:
   - character: 0
     words: And Everybody was Happy ever after
   state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &407917118
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,6 +1109,8 @@ MonoBehaviour:
   - character: 6
     words: Hi Pete
   state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &563337791
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +1160,8 @@ MonoBehaviour:
   - character: 6
     words: You ever heard about drugs?
   state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &666798466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,6 +1285,8 @@ MonoBehaviour:
   - character: 2
     words: So what now?
   state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &810959875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,6 +1336,8 @@ MonoBehaviour:
   - character: 4
     words: Wanna Ascend
   state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &868739324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,7 +1462,162 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
   text: "I don\u2019t know?!"
+  statRequirement: -1
+  flagRequirement: -1
+  flagRequirementLevel: 5
   next: {fileID: 128938546}
+--- !u!1 &896665737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 896665738}
+  - component: {fileID: 896665739}
+  m_Layer: 0
+  m_Name: GameObject (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &896665738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896665737}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 177299812}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &896665739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896665737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df92caf4580fada4681f93ce4a649d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  text: "\u201DEh, I\u2019ve seen bigger.\u201D"
+  statRequirement: -1
+  flagRequirement: -1
+  flagRequirementLevel: 5
+  next: {fileID: 1345028550}
+--- !u!1 &909781598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 909781599}
+  - component: {fileID: 909781600}
+  m_Layer: 0
+  m_Name: GameObject (20)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &909781599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909781598}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 119508989}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &909781600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909781598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df92caf4580fada4681f93ce4a649d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  text: "\u201DFind people who appreciate your talents.\u201D"
+  statRequirement: -1
+  flagRequirement: -1
+  flagRequirementLevel: 5
+  next: {fileID: 227052580}
+--- !u!1 &998316786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 998316787}
+  - component: {fileID: 998316788}
+  m_Layer: 0
+  m_Name: R1.5a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &998316787
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998316786}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301044891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &998316788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998316786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5fd1cffcd1fa443a75183a67b46a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MulticharacterDialogue
+  next: {fileID: 0}
+  dialogueContent:
+  - character: 2
+    words: "You\u2019re right, I should probably apologise to them and Learn to work
+      together with them."
+  - character: 2
+    words: Thanks, you really gave me something to think about.
+  state: 0
+  setsFlag: 1
+  gainsStat: -1
 --- !u!1 &1024044190
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,6 +1667,106 @@ MonoBehaviour:
   - character: 6
     words: Hi Bonzo
   state: 0
+  setsFlag: -1
+  gainsStat: -1
+--- !u!1 &1090368270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1090368271}
+  - component: {fileID: 1090368272}
+  m_Layer: 0
+  m_Name: GameObject (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1090368271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090368270}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 238389501}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1090368272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090368270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df92caf4580fada4681f93ce4a649d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  text: "\u201DWould you though? Maybe you just need to learn to be part of a team. "
+  statRequirement: -1
+  flagRequirement: -1
+  flagRequirementLevel: 5
+  next: {fileID: 998316788}
+--- !u!1 &1105380671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1105380672}
+  - component: {fileID: 1105380673}
+  m_Layer: 0
+  m_Name: GameObject (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1105380672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105380671}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 177299812}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1105380673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105380671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df92caf4580fada4681f93ce4a649d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  text: "\u201DDownright awe inspiring.\u201D"
+  statRequirement: -1
+  flagRequirement: -1
+  flagRequirementLevel: 5
+  next: {fileID: 1130105474}
 --- !u!1 &1125269189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,6 +1816,8 @@ MonoBehaviour:
   - character: 1
     words: Cant find it bruh
   state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &1129789679
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,6 +1867,65 @@ MonoBehaviour:
   - character: 2
     words: Fuk it im goin solo!!11
   state: 0
+  setsFlag: -1
+  gainsStat: -1
+--- !u!1 &1130105472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1130105473}
+  - component: {fileID: 1130105474}
+  m_Layer: 0
+  m_Name: R1.3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1130105473
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130105472}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1726447416}
+  - {fileID: 1502071876}
+  - {fileID: 1448100158}
+  m_Father: {fileID: 1301044891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1130105474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130105472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5fd1cffcd1fa443a75183a67b46a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MulticharacterDialogue
+  next: {fileID: 0}
+  dialogueContent:
+  - character: 2
+    words: "But it\u2019s more than just a stairway. It is a symbol of the heights
+      a chosen few of us can ascend to. Heights that most mortals cannot even imagine.
+      But how am I meant to reach those heights, if the others keep getting in my
+      way."
+  state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &1139660379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,6 +2158,8 @@ MonoBehaviour:
   - character: 2
     words: Let's Sing!
   state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &1241475160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,6 +2209,8 @@ MonoBehaviour:
   - character: 6
     words: You heard about sober pete
   state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &1285402796
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,6 +2277,14 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1751870133}
+  - {fileID: 177299812}
+  - {fileID: 1345028549}
+  - {fileID: 1130105473}
+  - {fileID: 1735206335}
+  - {fileID: 238389501}
+  - {fileID: 119508989}
+  - {fileID: 998316787}
+  - {fileID: 227052579}
   - {fileID: 1211345756}
   - {fileID: 1538413642}
   - {fileID: 1129789680}
@@ -1724,6 +2335,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
   text: "Let\u2019s just play without Paige, I can fill in for her."
+  statRequirement: 3
+  flagRequirement: -1
+  flagRequirementLevel: 1
   next: {fileID: 0}
 --- !u!1 &1340026111
 GameObject:
@@ -1770,7 +2384,110 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
   text: Uh, me?
+  statRequirement: -1
+  flagRequirement: -1
+  flagRequirementLevel: 5
   next: {fileID: 291599645}
+--- !u!1 &1345028548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1345028549}
+  - component: {fileID: 1345028550}
+  m_Layer: 0
+  m_Name: R1.2.1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1345028549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345028548}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301044891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1345028550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345028548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5fd1cffcd1fa443a75183a67b46a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MulticharacterDialogue
+  next: {fileID: 1130105474}
+  dialogueContent:
+  - character: 2
+    words: ' In your dreams, maybe.'
+  state: 0
+  setsFlag: -1
+  gainsStat: -1
+--- !u!1 &1353280812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1353280813}
+  - component: {fileID: 1353280814}
+  m_Layer: 0
+  m_Name: GameObject (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1353280813
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353280812}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1751870133}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1353280814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353280812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df92caf4580fada4681f93ce4a649d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  text: Stand next to him and gaze at the stairway.
+  statRequirement: -1
+  flagRequirement: -1
+  flagRequirementLevel: 5
+  next: {fileID: 177299813}
 --- !u!1 &1359712670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,6 +2624,8 @@ MonoBehaviour:
   - character: 6
     words: Here You Go Paige
   state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &1368784055
 GameObject:
   m_ObjectHideFlags: 0
@@ -2089,6 +2808,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
   text: "Let\u2019s all go for beers?"
+  statRequirement: 2
+  flagRequirement: -1
+  flagRequirementLevel: 1
   next: {fileID: 0}
 --- !u!1 &1372494055
 GameObject:
@@ -2139,6 +2861,57 @@ MonoBehaviour:
   - character: 3
     words: Let's have a drink, innit?
   state: 0
+  setsFlag: -1
+  gainsStat: -1
+--- !u!1 &1405757470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1405757471}
+  - component: {fileID: 1405757472}
+  m_Layer: 0
+  m_Name: GameObject (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1405757471
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405757470}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1735206335}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1405757472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405757470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df92caf4580fada4681f93ce4a649d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  text: "\u201DYou\u2019re probably better off without them\u201D "
+  statRequirement: -1
+  flagRequirement: -1
+  flagRequirementLevel: 5
+  next: {fileID: 227052580}
 --- !u!1 &1433915467
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,6 +2987,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433915467}
   m_CullTransparentMesh: 1
+--- !u!1 &1448100157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1448100158}
+  - component: {fileID: 1448100159}
+  m_Layer: 0
+  m_Name: GameObject (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1448100158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448100157}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1130105473}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1448100159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448100157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df92caf4580fada4681f93ce4a649d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  text: "\u201DThey probably feel the same way.\u201D"
+  statRequirement: -1
+  flagRequirement: 15
+  flagRequirementLevel: 5
+  next: {fileID: 119508990}
 --- !u!1 &1460296799
 GameObject:
   m_ObjectHideFlags: 0
@@ -2263,6 +3085,57 @@ MonoBehaviour:
   - character: 4
     words: Wanna Meditate
   state: 0
+  setsFlag: -1
+  gainsStat: -1
+--- !u!1 &1502071875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1502071876}
+  - component: {fileID: 1502071877}
+  m_Layer: 0
+  m_Name: GameObject (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1502071876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502071875}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1130105473}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1502071877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502071875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df92caf4580fada4681f93ce4a649d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  text: "\u201DYeah, they\u2019re a handful.\u201D"
+  statRequirement: -1
+  flagRequirement: -1
+  flagRequirementLevel: 5
+  next: {fileID: 238389502}
 --- !u!1 &1508173031
 GameObject:
   m_ObjectHideFlags: 0
@@ -2308,6 +3181,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
   text: "Let\u2019s consider everybody\u2019s feelings and try again later."
+  statRequirement: -1
+  flagRequirement: 15
+  flagRequirementLevel: 5
   next: {fileID: 0}
 --- !u!1 &1511995525
 GameObject:
@@ -2451,6 +3327,8 @@ MonoBehaviour:
   - character: 6
     words: Ever think about soloing
   state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &1578973404
 GameObject:
   m_ObjectHideFlags: 0
@@ -2820,6 +3698,113 @@ MonoBehaviour:
   - character: 6
     words: Hi Paul
   state: 0
+  setsFlag: -1
+  gainsStat: -1
+--- !u!1 &1726447415
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1726447416}
+  - component: {fileID: 1726447417}
+  m_Layer: 0
+  m_Name: GameObject (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1726447416
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726447415}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1130105473}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1726447417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726447415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df92caf4580fada4681f93ce4a649d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  text: "\u201DI\u2019m sure they don\u2019t mean to.\u201D"
+  statRequirement: -1
+  flagRequirement: -1
+  flagRequirementLevel: 5
+  next: {fileID: 1735206336}
+--- !u!1 &1735206334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1735206335}
+  - component: {fileID: 1735206336}
+  m_Layer: 0
+  m_Name: R1.4a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1735206335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735206334}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 304969717}
+  - {fileID: 1405757471}
+  m_Father: {fileID: 1301044891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1735206336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735206334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5fd1cffcd1fa443a75183a67b46a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MulticharacterDialogue
+  next: {fileID: 0}
+  dialogueContent:
+  - character: 2
+    words: "Whether they mean to or not, they\u2019re stifling my creativity. I know
+      I can be one of the greatest singers who ever lived."
+  - character: 2
+    words: How am I supposed to achieve my vision.
+  state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &1741378477
 GameObject:
   m_ObjectHideFlags: 0
@@ -2865,6 +3850,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
   text: "Le\u2019s remember what we\u2019re doing it for: The music"
+  statRequirement: 0
+  flagRequirement: -1
+  flagRequirementLevel: 1
   next: {fileID: 0}
 --- !u!1 &1751870132
 GameObject:
@@ -2877,7 +3865,7 @@ GameObject:
   - component: {fileID: 1751870133}
   - component: {fileID: 1751870134}
   m_Layer: 0
-  m_Name: R1
+  m_Name: R1.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2895,7 +3883,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1353280813}
+  - {fileID: 2118299674}
   m_Father: {fileID: 1301044891}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1751870134
@@ -2912,9 +3902,61 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MulticharacterDialogue
   next: {fileID: 0}
   dialogueContent:
-  - character: 6
-    words: Hi Rob
+  - character: 0
+    words: You arrive at a great stairway, that leads upwards, into heaven presumably.
+      Before it stands Rob, visibly in awe.
   state: 0
+  setsFlag: -1
+  gainsStat: -1
+--- !u!1 &1767229803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1767229804}
+  - component: {fileID: 1767229805}
+  m_Layer: 0
+  m_Name: GameObject (19)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1767229804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767229803}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 119508989}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1767229805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767229803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df92caf4580fada4681f93ce4a649d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  text: "\u201DYou need to learn to work as a group, support each other in your vision.\u201D"
+  statRequirement: -1
+  flagRequirement: -1
+  flagRequirementLevel: 5
+  next: {fileID: 998316788}
 --- !u!1 &1784526290
 GameObject:
   m_ObjectHideFlags: 0
@@ -2964,6 +4006,57 @@ MonoBehaviour:
   - character: 6
     words: Bro Drugs Lmao
   state: 0
+  setsFlag: -1
+  gainsStat: -1
+--- !u!1 &1850101673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1850101674}
+  - component: {fileID: 1850101675}
+  m_Layer: 0
+  m_Name: GameObject (18)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1850101674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850101673}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 238389501}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1850101675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850101673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df92caf4580fada4681f93ce4a649d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  text: "\u201DYou\u2019re right, they\u2019re holding you back.\u201D "
+  statRequirement: -1
+  flagRequirement: -1
+  flagRequirementLevel: 5
+  next: {fileID: 227052580}
 --- !u!1 &1869255664
 GameObject:
   m_ObjectHideFlags: 0
@@ -3009,6 +4102,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
   text: "Let\u2019s all cool down and try again later."
+  statRequirement: 1
+  flagRequirement: -1
+  flagRequirementLevel: 1
   next: {fileID: 0}
 --- !u!1 &1869767665
 GameObject:
@@ -3196,6 +4292,8 @@ MonoBehaviour:
   - character: 5
     words: Heres your drugs man
   state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &1888119386
 GameObject:
   m_ObjectHideFlags: 0
@@ -3385,6 +4483,8 @@ MonoBehaviour:
   - character: 5
     words: Im sober
   state: 0
+  setsFlag: -1
+  gainsStat: -1
 --- !u!1 &2001049772
 GameObject:
   m_ObjectHideFlags: 0
@@ -3434,6 +4534,57 @@ MonoBehaviour:
   - character: 0
     words: You play the guitar
   state: 0
+  setsFlag: -1
+  gainsStat: -1
+--- !u!1 &2118299673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2118299674}
+  - component: {fileID: 2118299675}
+  m_Layer: 0
+  m_Name: GameObject (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2118299674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118299673}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1751870133}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2118299675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118299673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df92caf4580fada4681f93ce4a649d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  text: "\u201DYep, that\u2019s a stairway to heaven alright.\u201D"
+  statRequirement: -1
+  flagRequirement: -1
+  flagRequirementLevel: 5
+  next: {fileID: 1130105474}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

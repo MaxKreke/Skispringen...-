@@ -17793,6 +17793,8 @@ MonoBehaviour:
     value: 0
   - key: ReturnedGuitar
     value: 0
+  - key: Empathy
+    value: 0
   inventory: []
   subScenes:
   - title: Talk with Rob

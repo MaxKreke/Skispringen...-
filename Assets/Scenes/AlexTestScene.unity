@@ -3472,6 +3472,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Terminal
       objectReference: {fileID: 0}
+    - target: {fileID: 5518280741785634097, guid: 81af291c9ccbe1042a3df4cf4922802a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5528511006872078675, guid: 81af291c9ccbe1042a3df4cf4922802a, type: 3}
       propertyPath: tutorialStage
       value: 999

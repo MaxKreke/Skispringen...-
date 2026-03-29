@@ -59,6 +59,11 @@ public class TextManager : MonoBehaviour
         text.text = current.GetText();
     }
 
+    public void SetText(string customText)
+    {
+        text.text = customText;
+    }
+
     public void TrySetCharacter()
     {
         int character = current.TryGetCharacter();

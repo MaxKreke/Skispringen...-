@@ -113,7 +113,7 @@ public class TransitionManager : MonoBehaviour
     private int GetFlagValue(string keyName)
     {
         var flag = terminal.integerFlags.Find(f => f.key == keyName);
-        return flag != null ? flag.value : 0;
+        return flag != null ? flag.value-1 : 0;
     }
 
     public void CloseGoalPanel() { goalPanel.SetActive(false); }

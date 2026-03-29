@@ -11,6 +11,7 @@ public class DynamicOptionsMenu : MonoBehaviour
 
     public void CreateButtons(DialogueOption[] data)
     {
+        Terminal t = GameObject.Find("Terminal").GetComponent<Terminal>();
         for (int i = 0; i < data.Length; i++)
         {
             DialogueOption option = data[i];
@@ -27,6 +28,9 @@ public class DynamicOptionsMenu : MonoBehaviour
 
             // Add click listener
             Button btn = btnObj.GetComponent<Button>();
+
+            btn.interactable = option.CheckRequirement(t);
+
             btn.onClick.AddListener(() => OnButtonClicked(option));
         }
     }

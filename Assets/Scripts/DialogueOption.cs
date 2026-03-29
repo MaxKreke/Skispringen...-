@@ -6,14 +6,15 @@ public class DialogueOption : MonoBehaviour
 {
     public string text;
     public Action callback;
-    public Func<Terminal, bool> requirement;
+    public int statRequirement = -1;
+    public int flagRequirement = -1;
+    public int flagRequirementLevel = 5;
     public Dialogue next;
 
-    public bool CheckRequirement()
+    public bool CheckRequirement(Terminal t)
     {
-        if (requirement == null) return true;
-        GameObject t = GameObject.Find("Terminal");
-        if (t == null) return false;
-        return requirement(t.GetComponent<Terminal>());
+        if (statRequirement >= 0) return (t.integerFlags[statRequirement].value > flagRequirementLevel);
+        if (flagRequirement >= 0) return (t.boolFlags[flagRequirement].value);
+        return true;
     }
 }

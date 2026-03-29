@@ -22,6 +22,8 @@ public class MulticharacterDialogue : Dialogue
 {
     public Sentence[] dialogueContent;
     public int state = 0;
+    public int setsFlag = -1;
+    public int gainsStat = -1;
 
     public override bool HasNext()
     {
@@ -51,6 +53,30 @@ public class MulticharacterDialogue : Dialogue
             PassOptions(tm);
             return;
         }
+
+        //Set Flags
+        Terminal t = GameObject.Find("Terminal").GetComponent<Terminal>();
+        if (gainsStat >= 0)
+        {
+            t.integerFlags[gainsStat].value++;
+            string statName = t.integerFlags[gainsStat].key;
+
+            
+            tm.SetText(statName + " increased by 1.");
+            tm.SetCharPort(0);
+            tm.SetCharName(0);
+
+            gainsStat = -1;
+            return;
+        }
+        if (setsFlag >= 0)
+        {
+            t.boolFlags[setsFlag].value = true;
+            setsFlag = -1;
+            EndScene();
+            return;
+        }
+
         EndScene();
     }
 
