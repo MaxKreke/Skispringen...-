@@ -9641,7 +9641,7 @@ MonoBehaviour:
   - character: 0
     words: You leave the bird park.
   state: 0
-  setsFlag: -1
+  setsFlag: 6
   gainsStat: -1
   isEnding: -1
 --- !u!1 &1715376895
