@@ -103,10 +103,10 @@ public class Terminal : MonoBehaviour
         if(dss.title == "Reunite the band")
         {
             bool OK = true;
-            if (!boolFlags[1]) return false;
-            if (!boolFlags[16]) return false;
-            if (!boolFlags[14]) return false;
-            if (!boolFlags[3]) return false;
+            if (!boolFlags[1].value) return false;
+            if (!boolFlags[16].value) return false;
+            if (!boolFlags[14].value) return false;
+            if (!boolFlags[3].value) return false;
 
             return true;
         }
