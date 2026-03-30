@@ -17709,23 +17709,65 @@ MonoBehaviour:
     location: 4
     necessaryBoolFlags: 
     necessaryIntFlags: 
-    antiBoolFlags: 
+    antiBoolFlags: 03000000
   - title: Talk with Paige
-    id: P1
+    id: P1.1
     location: 3
     necessaryBoolFlags: 
     necessaryIntFlags: 
-    antiBoolFlags: 
+    antiBoolFlags: 0c000000
   - title: Talk with Bonzo
-    id: B1
+    id: B1.1
     location: 1
     necessaryBoolFlags: 
     necessaryIntFlags: 
+    antiBoolFlags: 0400000010000000
+  - title: Start Solo Career
+    id: R2.1
+    location: 5
+    necessaryBoolFlags: 02000000
+    necessaryIntFlags: 03000000
     antiBoolFlags: 
   - title: Sing with Rob
     id: R2.1
     location: 5
     necessaryBoolFlags: 0000000001000000
+    necessaryIntFlags: 
+    antiBoolFlags: 
+  - title: Ascend with Paul
+    id: JP3.1
+    location: 4
+    necessaryBoolFlags: 
+    necessaryIntFlags: 01000000
+    antiBoolFlags: 
+  - title: Meditate with Paul
+    id: JP2.1
+    location: 4
+    necessaryBoolFlags: 03000000
+    necessaryIntFlags: 
+    antiBoolFlags: 
+  - title: Practice Guitar
+    id: P4.1
+    location: 3
+    necessaryBoolFlags: 0e000000
+    necessaryIntFlags: 
+    antiBoolFlags: 
+  - title: Return Guitar
+    id: P3.1
+    location: 3
+    necessaryBoolFlags: 0d000000
+    necessaryIntFlags: 
+    antiBoolFlags: 0e000000
+  - title: Haven't found guitar yet
+    id: P2
+    location: 3
+    necessaryBoolFlags: 0c000000
+    necessaryIntFlags: 
+    antiBoolFlags: 0d000000
+  - title: Drink with Bonzo
+    id: B2.1
+    location: 1
+    necessaryBoolFlags: 04000000
     necessaryIntFlags: 
     antiBoolFlags: 
   tutorialStage: 0

@@ -677,7 +677,7 @@ MonoBehaviour:
     words: You meditate together for a while, then you leave. You feel a lot calmer
       now. Your Cool increased to 1.
   state: 0
-  setsFlag: -1
+  setsFlag: 3
   gainsStat: 1
   isEnding: -1
 --- !u!1 &148337896
