@@ -18313,6 +18313,12 @@ MonoBehaviour:
     necessaryBoolFlags: 
     necessaryIntFlags: 
     antiBoolFlags: 1100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000
+  - title: Do drug deal
+    id: O1.1
+    location: 3
+    necessaryBoolFlags: 05000000
+    necessaryIntFlags: 
+    antiBoolFlags: 0600000007000000
   - title: Talk with Rob
     id: R1.1
     location: 5

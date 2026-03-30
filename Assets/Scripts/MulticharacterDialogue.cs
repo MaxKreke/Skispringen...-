@@ -14,6 +14,8 @@ public class Sentence
     //4 = JP
     //5 = Pete
     //6 = You
+    //7 
+    //8
     public int character;
     public string words;
 }
