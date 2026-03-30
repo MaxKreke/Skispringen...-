@@ -2006,6 +2006,78 @@ MonoBehaviour:
   flagRequirement: -1
   statRequirementLevel: 5
   next: {fileID: 1876411704}
+--- !u!1 &290077202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 290077203}
+  - component: {fileID: 290077204}
+  m_Layer: 0
+  m_Name: LZ1.2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &290077203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290077202}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1285402797}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &290077204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290077202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5fd1cffcd1fa443a75183a67b46a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MulticharacterDialogue
+  next: {fileID: 729968951}
+  dialogueContent:
+  - character: 2
+    words: "I have learned, that even though I am a fabulous, once in a generation
+      talent, I shouldn\u2019t take my backup, I mean bandmates, for granted. Especially
+      you Paul, as a bass player you fill a vital role in this band and I apologise
+      for how I treated you."
+  - character: 4
+    words: "Thank you, Rob, that\u2019s very mature."
+  - character: 3
+    words: "I learned, that too much alcohol can be a bad thing and that I maybe
+      have a bit of a temper problem when I have had too much or it\u2019s been too
+      long since the last drink. I promise to work on that."
+  - character: 1
+    words: And I learned that throwing my guitar out the window is a bad idea.
+  - character: 0
+    words: The band looks at Paul for a while, before they remember he is perfect
+      and has nothing to apologise for.
+  - character: 6
+    words: Now how about you all play some music?
+  - character: 0
+    words: 'The band: Good idea, manager.'
+  - character: 1
+    words: I think I know a blues song we can file the serial number off of.
+  state: 0
+  setsFlag: -1
+  gainsStat: -1
+  isEnding: -1
 --- !u!1 &291599643
 GameObject:
   m_ObjectHideFlags: 0
@@ -2485,7 +2557,7 @@ GameObject:
   - component: {fileID: 318950568}
   - component: {fileID: 318950569}
   m_Layer: 0
-  m_Name: Reunion
+  m_Name: LZ1.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2503,7 +2575,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 479928865}
+  - {fileID: 1174483076}
   m_Father: {fileID: 1285402797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &318950569
@@ -2521,11 +2595,12 @@ MonoBehaviour:
   next: {fileID: 0}
   dialogueContent:
   - character: 0
-    words: And Everybody was Happy ever after
+    words: The band is once again assembled in the recording studio. Awkward silence
+      fills the room.
   state: 0
   setsFlag: -1
   gainsStat: -1
-  isEnding: 2
+  isEnding: -1
 --- !u!1 &341330314
 GameObject:
   m_ObjectHideFlags: 0
@@ -2930,6 +3005,55 @@ MonoBehaviour:
   flagRequirement: -1
   statRequirementLevel: 5
   next: {fileID: 523690900}
+--- !u!1 &479928864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 479928865}
+  - component: {fileID: 479928866}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479928865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479928864}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 318950568}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &479928866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479928864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df92caf4580fada4681f93ce4a649d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  text: "\u201DWould anybody like to go first?\u201D"
+  statRequirement: -1
+  flagRequirement: -1
+  statRequirementLevel: 5
+  next: {fileID: 290077204}
 --- !u!1 &496338968
 GameObject:
   m_ObjectHideFlags: 0
@@ -3869,6 +3993,62 @@ MonoBehaviour:
   setsFlag: -1
   gainsStat: -1
   isEnding: -1
+--- !u!1 &729968949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 729968950}
+  - component: {fileID: 729968951}
+  m_Layer: 0
+  m_Name: 'Ending: Reunion'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &729968950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729968949}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1285402797}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &729968951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729968949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5fd1cffcd1fa443a75183a67b46a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MulticharacterDialogue
+  next: {fileID: 0}
+  dialogueContent:
+  - character: 0
+    words: And thus, Rob, Paul, Paige and Bonzo played for 12 hours, recording the
+      album in a single session. Later they went on tour. Followed by another album,
+      followed by another tour and so on and so forth. And the name of their band?
+  - character: 0
+    words: Has been removed to skirt litigation for defamation.
+  state: 0
+  setsFlag: -1
+  gainsStat: -1
+  isEnding: 2
 --- !u!1 &743591354
 GameObject:
   m_ObjectHideFlags: 0
@@ -6102,6 +6282,55 @@ MonoBehaviour:
   flagRequirement: -1
   statRequirementLevel: 5
   next: {fileID: 136301555}
+--- !u!1 &1174483075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1174483076}
+  - component: {fileID: 1174483077}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1174483076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174483075}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 318950568}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1174483077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174483075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df92caf4580fada4681f93ce4a649d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  text: "\u201DMaybe start by apologising to each other.\u201D"
+  statRequirement: -1
+  flagRequirement: -1
+  statRequirementLevel: 5
+  next: {fileID: 290077204}
 --- !u!1 &1182218641
 GameObject:
   m_ObjectHideFlags: 0
@@ -6674,6 +6903,8 @@ Transform:
   - {fileID: 128938545}
   - {fileID: 312058149}
   - {fileID: 318950568}
+  - {fileID: 290077203}
+  - {fileID: 729968950}
   m_Father: {fileID: 1182218642}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1293199400

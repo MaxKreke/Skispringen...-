@@ -18409,6 +18409,12 @@ MonoBehaviour:
     necessaryBoolFlags: 09000000
     necessaryIntFlags: 
     antiBoolFlags: 0a000000
+  - title: Reunite the band
+    id: LZ1.1
+    location: 0
+    necessaryBoolFlags: 
+    necessaryIntFlags: 
+    antiBoolFlags: 
   tutorialStage: 0
   speedRunTime: 0
   ending: -1

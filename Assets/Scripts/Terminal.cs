@@ -99,6 +99,19 @@ public class Terminal : MonoBehaviour
 
     public bool ChecksOut(DialogueSubScene dss)
     {
+
+        if(dss.title == "Reunite the band")
+        {
+            bool OK = true;
+            if (!boolFlags[1]) return false;
+            if (!boolFlags[16]) return false;
+            if (!boolFlags[14]) return false;
+            if (!boolFlags[3]) return false;
+
+            return true;
+        }
+
+
         foreach(int i in dss.antiBoolFlags)
         {
             if (boolFlags[i].value)return false;
