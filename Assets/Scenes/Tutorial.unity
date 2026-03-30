@@ -1751,7 +1751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   fly: {fileID: 3594595781006202611}
   tutorialText: {fileID: 763767664}
-  t: {fileID: 5528511007852018092}
+  t: {fileID: 8338348482471847526}
   tutorialRing: {fileID: 758671168455717775}
   tutRingScript: {fileID: 921682954407130919}
   haus: {fileID: 443545275}
@@ -2901,6 +2901,23 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1437179113189565151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6037254824834255022}
+  - component: {fileID: 8338348482471847526}
+  m_Layer: 0
+  m_Name: Terminal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!33 &1481014099859436800
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17616,166 +17633,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &5518280740622218702
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5973350022137704519}
-  - component: {fileID: 5528511007852018092}
-  m_Layer: 0
-  m_Name: Terminal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &5528511007852018092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5518280740622218702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4012d12d56a12f4eb6f5745da7eda04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Terminal
-  integerFlags:
-  - key: Passion
-    value: 1
-  - key: Cool
-    value: 1
-  - key: Drugs
-    value: 1
-  - key: Guitar
-    value: 1
-  boolFlags:
-  - key: EncouragedSelfishness
-    value: 0
-  - key: EncouragedTeamwork
-    value: 0
-  - key: SuggestedSoloCareer
-    value: 0
-  - key: LearnMeditation
-    value: 0
-  - key: EncourageAlcoholism
-    value: 0
-  - key: ArrangeDrugDeal
-    value: 0
-  - key: BoughtHeroin
-    value: 0
-  - key: BoughtSugar
-    value: 0
-  - key: GaveHeroin
-    value: 0
-  - key: GaveSugar
-    value: 0
-  - key: SoberPete
-    value: 0
-  - key: EncourageMeditation
-    value: 0
-  - key: SearchGuitar
-    value: 0
-  - key: GotGuitar
-    value: 0
-  - key: ReturnedGuitar
-    value: 0
-  - key: Empathy
-    value: 0
-  - key: EncourageModeration
-    value: 0
-  - key: Discord
-    value: 0
-  subScenes:
-  - title: Intro
-    id: Opening 1.1
-    location: 0
-    necessaryBoolFlags: 
-    necessaryIntFlags: 
-    antiBoolFlags: 1100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000
-  - title: Talk with Rob
-    id: R1.1
-    location: 5
-    necessaryBoolFlags: 
-    necessaryIntFlags: 
-    antiBoolFlags: 0000000001000000
-  - title: Talk with Paul
-    id: JP1
-    location: 4
-    necessaryBoolFlags: 
-    necessaryIntFlags: 
-    antiBoolFlags: 03000000
-  - title: Talk with Paige
-    id: P1.1
-    location: 3
-    necessaryBoolFlags: 
-    necessaryIntFlags: 
-    antiBoolFlags: 0c000000
-  - title: Talk with Bonzo
-    id: B1.1
-    location: 1
-    necessaryBoolFlags: 
-    necessaryIntFlags: 
-    antiBoolFlags: 0400000010000000
-  - title: Start Solo Career
-    id: R2.1
-    location: 5
-    necessaryBoolFlags: 02000000
-    necessaryIntFlags: 03000000
-    antiBoolFlags: 
-  - title: Sing with Rob
-    id: R2.1
-    location: 5
-    necessaryBoolFlags: 0000000001000000
-    necessaryIntFlags: 
-    antiBoolFlags: 
-  - title: Ascend with Paul
-    id: JP3.1
-    location: 4
-    necessaryBoolFlags: 
-    necessaryIntFlags: 01000000
-    antiBoolFlags: 
-  - title: Meditate with Paul
-    id: JP2.1
-    location: 4
-    necessaryBoolFlags: 03000000
-    necessaryIntFlags: 
-    antiBoolFlags: 
-  - title: Practice Guitar
-    id: P4.1
-    location: 3
-    necessaryBoolFlags: 0e000000
-    necessaryIntFlags: 
-    antiBoolFlags: 
-  - title: Return Guitar
-    id: P3.1
-    location: 3
-    necessaryBoolFlags: 0d000000
-    necessaryIntFlags: 
-    antiBoolFlags: 0e000000
-  - title: Haven't found guitar yet
-    id: P2
-    location: 3
-    necessaryBoolFlags: 0c000000
-    necessaryIntFlags: 
-    antiBoolFlags: 0d000000
-  - title: Drink with Bonzo
-    id: B2.1
-    location: 1
-    necessaryBoolFlags: 04000000
-    necessaryIntFlags: 
-    antiBoolFlags: 
-  tutorialStage: 0
-  speedRunTime: 0
-  ending: -1
-  location: 0
-  targetLocation: -1
-  characterAtLocation: 0300000000000000010000000400000002000000
 --- !u!4 &5622636610547848002
 Transform:
   m_ObjectHideFlags: 0
@@ -17863,13 +17720,13 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8620789278933527762}
   m_Enabled: 1
---- !u!4 &5973350022137704519
+--- !u!4 &6037254824834255022
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5518280740622218702}
+  m_GameObject: {fileID: 1437179113189565151}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -18391,6 +18248,149 @@ Transform:
   m_Children: []
   m_Father: {fileID: 443545276}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8338348482471847526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437179113189565151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4012d12d56a12f4eb6f5745da7eda04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Terminal
+  integerFlags:
+  - key: Passion
+    value: 1
+  - key: Cool
+    value: 1
+  - key: Drugs
+    value: 1
+  - key: Guitar
+    value: 1
+  boolFlags:
+  - key: EncouragedSelfishness
+    value: 0
+  - key: EncouragedTeamwork
+    value: 0
+  - key: SuggestedSoloCareer
+    value: 0
+  - key: LearnMeditation
+    value: 0
+  - key: EncourageAlcoholism
+    value: 0
+  - key: ArrangeDrugDeal
+    value: 0
+  - key: BoughtHeroin
+    value: 0
+  - key: BoughtSugar
+    value: 0
+  - key: GaveHeroin
+    value: 0
+  - key: GaveSugar
+    value: 0
+  - key: SoberPete
+    value: 0
+  - key: EncourageMeditation
+    value: 0
+  - key: SearchGuitar
+    value: 0
+  - key: GotGuitar
+    value: 0
+  - key: ReturnedGuitar
+    value: 0
+  - key: Empathy
+    value: 0
+  - key: EncourageModeration
+    value: 0
+  - key: Discord
+    value: 0
+  subScenes:
+  - title: Intro
+    id: Opening 1.1
+    location: 0
+    necessaryBoolFlags: 
+    necessaryIntFlags: 
+    antiBoolFlags: 1100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000
+  - title: Talk with Rob
+    id: R1.1
+    location: 5
+    necessaryBoolFlags: 
+    necessaryIntFlags: 
+    antiBoolFlags: 0000000001000000
+  - title: Talk with Paul
+    id: JP1
+    location: 4
+    necessaryBoolFlags: 
+    necessaryIntFlags: 
+    antiBoolFlags: 03000000
+  - title: Talk with Paige
+    id: P1.1
+    location: 3
+    necessaryBoolFlags: 
+    necessaryIntFlags: 
+    antiBoolFlags: 0c000000
+  - title: Talk with Bonzo
+    id: B1.1
+    location: 1
+    necessaryBoolFlags: 
+    necessaryIntFlags: 
+    antiBoolFlags: 0400000010000000
+  - title: Start Solo Career
+    id: R2.1
+    location: 5
+    necessaryBoolFlags: 02000000
+    necessaryIntFlags: 03000000
+    antiBoolFlags: 
+  - title: Sing with Rob
+    id: R2.1
+    location: 5
+    necessaryBoolFlags: 0000000001000000
+    necessaryIntFlags: 
+    antiBoolFlags: 
+  - title: Ascend with Paul
+    id: JP3.1
+    location: 4
+    necessaryBoolFlags: 
+    necessaryIntFlags: 01000000
+    antiBoolFlags: 
+  - title: Meditate with Paul
+    id: JP2.1
+    location: 4
+    necessaryBoolFlags: 03000000
+    necessaryIntFlags: 
+    antiBoolFlags: 
+  - title: Practice Guitar
+    id: P4.1
+    location: 3
+    necessaryBoolFlags: 0e000000
+    necessaryIntFlags: 
+    antiBoolFlags: 
+  - title: Return Guitar
+    id: P3.1
+    location: 3
+    necessaryBoolFlags: 0d000000
+    necessaryIntFlags: 
+    antiBoolFlags: 0e000000
+  - title: Haven't found guitar yet
+    id: P2
+    location: 3
+    necessaryBoolFlags: 0c000000
+    necessaryIntFlags: 
+    antiBoolFlags: 0d000000
+  - title: Drink with Bonzo
+    id: B2.1
+    location: 1
+    necessaryBoolFlags: 04000000
+    necessaryIntFlags: 
+    antiBoolFlags: 
+  tutorialStage: 0
+  speedRunTime: 0
+  ending: -1
+  location: 0
+  targetLocation: -1
+  characterAtLocation: 0300000000000000010000000400000002000000
 --- !u!20 &8419285339141337303
 Camera:
   m_ObjectHideFlags: 0
@@ -18684,4 +18684,4 @@ SceneRoots:
   - {fileID: 3372924855998276443}
   - {fileID: 443545276}
   - {fileID: 758671168455717775}
-  - {fileID: 5973350022137704519}
+  - {fileID: 6037254824834255022}

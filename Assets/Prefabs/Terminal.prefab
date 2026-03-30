@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5518280741785634097
+--- !u!1 &2531854787433106298
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5973350020957552824}
-  - component: {fileID: 5528511006872078675}
+  - component: {fileID: 7141500701419938059}
+  - component: {fileID: 4856241104555741123}
   m_Layer: 0
-  m_Name: TerminalCheckpoint
+  m_Name: Terminal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5973350020957552824
+--- !u!4 &7141500701419938059
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5518280741785634097}
+  m_GameObject: {fileID: 2531854787433106298}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1993.7701, y: 0.00001, z: 11041.719}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5528511006872078675
+--- !u!114 &4856241104555741123
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5518280741785634097}
+  m_GameObject: {fileID: 2531854787433106298}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4012d12d56a12f4eb6f5745da7eda04, type: 3}
@@ -88,32 +88,87 @@ MonoBehaviour:
     value: 0
   - key: EncourageModeration
     value: 0
-  inventory: []
+  - key: Discord
+    value: 0
   subScenes:
-  - title: Talk with Rob
-    id: R1
-    location: 5
-    needAllRequirements: 0
+  - title: Intro
+    id: Opening 1.1
+    location: 0
     necessaryBoolFlags: 
     necessaryIntFlags: 
+    antiBoolFlags: 1100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000
+  - title: Talk with Rob
+    id: R1.1
+    location: 5
+    necessaryBoolFlags: 
+    necessaryIntFlags: 
+    antiBoolFlags: 0000000001000000
   - title: Talk with Paul
     id: JP1
     location: 4
-    needAllRequirements: 0
     necessaryBoolFlags: 
     necessaryIntFlags: 
+    antiBoolFlags: 03000000
   - title: Talk with Paige
-    id: P1
+    id: P1.1
     location: 3
-    needAllRequirements: 0
     necessaryBoolFlags: 
     necessaryIntFlags: 
+    antiBoolFlags: 0c000000
   - title: Talk with Bonzo
-    id: B1
+    id: B1.1
     location: 1
-    needAllRequirements: 0
     necessaryBoolFlags: 
     necessaryIntFlags: 
+    antiBoolFlags: 0400000010000000
+  - title: Start Solo Career
+    id: R2.1
+    location: 5
+    necessaryBoolFlags: 02000000
+    necessaryIntFlags: 03000000
+    antiBoolFlags: 
+  - title: Sing with Rob
+    id: R2.1
+    location: 5
+    necessaryBoolFlags: 0000000001000000
+    necessaryIntFlags: 
+    antiBoolFlags: 
+  - title: Ascend with Paul
+    id: JP3.1
+    location: 4
+    necessaryBoolFlags: 
+    necessaryIntFlags: 01000000
+    antiBoolFlags: 
+  - title: Meditate with Paul
+    id: JP2.1
+    location: 4
+    necessaryBoolFlags: 03000000
+    necessaryIntFlags: 
+    antiBoolFlags: 
+  - title: Practice Guitar
+    id: P4.1
+    location: 3
+    necessaryBoolFlags: 0e000000
+    necessaryIntFlags: 
+    antiBoolFlags: 
+  - title: Return Guitar
+    id: P3.1
+    location: 3
+    necessaryBoolFlags: 0d000000
+    necessaryIntFlags: 
+    antiBoolFlags: 0e000000
+  - title: Haven't found guitar yet
+    id: P2
+    location: 3
+    necessaryBoolFlags: 0c000000
+    necessaryIntFlags: 
+    antiBoolFlags: 0d000000
+  - title: Drink with Bonzo
+    id: B2.1
+    location: 1
+    necessaryBoolFlags: 04000000
+    necessaryIntFlags: 
+    antiBoolFlags: 
   tutorialStage: 0
   speedRunTime: 0
   ending: -1
