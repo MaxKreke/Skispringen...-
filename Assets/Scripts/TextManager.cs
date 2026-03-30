@@ -45,8 +45,8 @@ public class TextManager : MonoBehaviour
         if (location < 0) return;
 
         Debug.Log("Here");
-        Debug.Log(dc.transform.GetChild(location).GetChild(0));
-        current = dc.transform.GetChild(location).GetChild(0).GetComponent<Dialogue>();
+        string ID = t.GetCurrentSubScene();
+        current = GameObject.Find(ID).GetComponent<Dialogue>();
         Debug.Log(current);
 
         SetCharName(t.GetCharacter());

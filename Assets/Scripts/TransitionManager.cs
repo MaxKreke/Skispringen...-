@@ -90,7 +90,7 @@ public class TransitionManager : MonoBehaviour
 
     private void UpdateDynamicButtons()
     {
-        var allowedScenes = terminal.GetSubScenesThatMeetRequirements();
+        var allowedScenes = terminal.GetReducedSubScenesThatMeetRequirements();
 
         foreach (MapButton mapBtn in allMapButtons)
         {

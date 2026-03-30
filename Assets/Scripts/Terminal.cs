@@ -17,21 +17,15 @@ public class BooleanFlag
 }
 
 [Serializable]
-public class Item
-{
-    public string itemName;
-    public Texture itemImage;
-}
-
-[Serializable]
 public class DialogueSubScene
 {
     public string title;
     public string id;
     public int location;
-    public bool needAllRequirements;
+    //public bool needAllRequirements;
     public int[] necessaryBoolFlags;
     public int[] necessaryIntFlags;
+    public int[] antiBoolFlags;
 }
 
 public class Terminal : MonoBehaviour
@@ -39,7 +33,6 @@ public class Terminal : MonoBehaviour
 
     public List<IntegerFlag> integerFlags;
     public List<BooleanFlag> boolFlags;
-    public List<Item> inventory;
     public List<DialogueSubScene> subScenes;
     public int tutorialStage;
     public float speedRunTime;
@@ -62,22 +55,69 @@ public class Terminal : MonoBehaviour
     //5 = Pete
     public int[] characterAtLocation =
     {
-        2,2,2,2,2
+        2,2,2,2,2,2
     };
+
+    public string GetCurrentSubScene()
+    {
+        List<DialogueSubScene> subscenelist = GetSubScenesThatMeetRequirements();
+        DialogueSubScene subScene = subscenelist[location];
+        return subScene.id;
+    }
 
     public List<DialogueSubScene> GetSubScenesThatMeetRequirements()
     {
         List<DialogueSubScene> returnList = new List<DialogueSubScene>();
+        for (int i = 0; i < 6; i++)
+        {
+            returnList.Add(null);
+        }
+        bool[] occupied = {
+            false, false, false, false, false, false
+        };
+
         foreach (DialogueSubScene dss in subScenes) {
-            bool checksOut = true;
+            int dssLocation = dss.location;
+            if (occupied[dssLocation]) continue;
+            bool checksOut = ChecksOut(dss);
 
-            //TO DO!!!
-            //Run all checks
+            if (!checksOut) continue;
 
-            if(checksOut)returnList.Add(dss);
+            returnList[dssLocation] = dss;
+            occupied[dssLocation] = true;
         }
 
         return returnList;
+    }
+
+    public List<DialogueSubScene> GetReducedSubScenesThatMeetRequirements()
+    {
+        List<DialogueSubScene> returnList = GetSubScenesThatMeetRequirements();
+        returnList.RemoveAll(dss => dss == null);
+        return returnList;
+    }
+
+    public bool ChecksOut(DialogueSubScene dss)
+    {
+        foreach(int i in dss.antiBoolFlags)
+        {
+            if (boolFlags[i].value)return false;
+        }
+
+        bool boolFlagsBool = (dss.necessaryBoolFlags.Length == 0);
+        bool intFlagsBool = (dss.necessaryIntFlags.Length == 0);
+
+        foreach(int i in dss.necessaryBoolFlags)
+        {
+            if (boolFlags[i].value) boolFlagsBool = true;
+        }
+
+        foreach(int i in dss.necessaryIntFlags)
+        {
+            if(integerFlags[i].value >= 6) intFlagsBool = true;
+        }
+
+        return (boolFlagsBool && intFlagsBool);
     }
 
     public int GetCharacter()

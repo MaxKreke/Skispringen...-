@@ -1675,7 +1675,7 @@ MonoBehaviour:
   - character: 0
     words: They leave, each separately.
   state: 0
-  setsFlag: -1
+  setsFlag: 17
   gainsStat: -1
   isEnding: -1
 --- !u!1 &312457712

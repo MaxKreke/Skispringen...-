@@ -17689,32 +17689,45 @@ MonoBehaviour:
     value: 0
   - key: EncourageModeration
     value: 0
-  inventory: []
+  - key: Discord
+    value: 0
   subScenes:
-  - title: Talk with Rob
-    id: R1
-    location: 5
-    needAllRequirements: 0
+  - title: Intro
+    id: Opening 1.1
+    location: 0
     necessaryBoolFlags: 
     necessaryIntFlags: 
+    antiBoolFlags: 1100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000
+  - title: Talk with Rob
+    id: R1.1
+    location: 5
+    necessaryBoolFlags: 
+    necessaryIntFlags: 
+    antiBoolFlags: 0000000001000000
   - title: Talk with Paul
     id: JP1
     location: 4
-    needAllRequirements: 0
     necessaryBoolFlags: 
     necessaryIntFlags: 
+    antiBoolFlags: 
   - title: Talk with Paige
     id: P1
     location: 3
-    needAllRequirements: 0
     necessaryBoolFlags: 
     necessaryIntFlags: 
+    antiBoolFlags: 
   - title: Talk with Bonzo
     id: B1
     location: 1
-    needAllRequirements: 0
     necessaryBoolFlags: 
     necessaryIntFlags: 
+    antiBoolFlags: 
+  - title: Sing with Rob
+    id: R2.1
+    location: 5
+    necessaryBoolFlags: 0000000001000000
+    necessaryIntFlags: 
+    antiBoolFlags: 
   tutorialStage: 0
   speedRunTime: 0
   ending: -1

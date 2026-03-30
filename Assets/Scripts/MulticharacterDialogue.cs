@@ -26,13 +26,13 @@ public class MulticharacterDialogue : Dialogue
     public int gainsStat = -1;
     public int isEnding = -1;
 
-    public override bool HasNext()
-    {
-        if (state < dialogueContent.Length-1) return true;
-        if (this.transform.childCount > 0) return true;
-        if (next != null) return true; 
-        return false;
-    }
+    //public override bool HasNext()
+    //{
+    //    if (state < dialogueContent.Length-1) return true;
+    //    if (this.transform.childCount > 0) return true;
+    //    if (next != null) return true; 
+    //    return false;
+    //}
 
     public override string GetText()
     {
@@ -82,6 +82,15 @@ public class MulticharacterDialogue : Dialogue
             EndScene();
             return;
         }
+
+        if (next != null)
+        {
+            tm.current = next;
+            tm.SetText();
+            tm.TrySetCharacter();
+            return;
+        }
+
         if(isEnding >= 0){
             t.ending = isEnding;
             EndGame();
