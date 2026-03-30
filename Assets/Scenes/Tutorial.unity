@@ -18385,6 +18385,24 @@ MonoBehaviour:
     necessaryBoolFlags: 04000000
     necessaryIntFlags: 
     antiBoolFlags: 
+  - title: Talk with Pete
+    id: PT1.1
+    location: 2
+    necessaryBoolFlags: 0c000000
+    necessaryIntFlags: 
+    antiBoolFlags: 05000000
+  - title: Trade with Pete
+    id: PT2.1
+    location: 2
+    necessaryBoolFlags: 0600000007000000
+    necessaryIntFlags: 
+    antiBoolFlags: 0d000000
+  - title: Pete is sober
+    id: PT3.1
+    location: 2
+    necessaryBoolFlags: 09000000
+    necessaryIntFlags: 
+    antiBoolFlags: 0a000000
   tutorialStage: 0
   speedRunTime: 0
   ending: -1
