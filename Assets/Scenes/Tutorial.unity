@@ -1751,7 +1751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   fly: {fileID: 3594595781006202611}
   tutorialText: {fileID: 763767664}
-  t: {fileID: 6241718698704217963}
+  t: {fileID: 0}
   tutorialRing: {fileID: 758671168455717775}
   tutRingScript: {fileID: 921682954407130919}
   haus: {fileID: 443545275}
@@ -17616,21 +17616,111 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5243218405495959168
-Transform:
+--- !u!1 &5518280740622218702
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6247304633649998601}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1993.7701, y: 0.00001, z: 11041.719}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5973350022137704519}
+  - component: {fileID: 5528511007852018092}
+  m_Layer: 0
+  m_Name: Terminal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &5528511007852018092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5518280740622218702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4012d12d56a12f4eb6f5745da7eda04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Terminal
+  integerFlags:
+  - key: Passion
+    value: 1
+  - key: Cool
+    value: 1
+  - key: Drugs
+    value: 1
+  - key: Guitar
+    value: 1
+  boolFlags:
+  - key: EncouragedSelfishness
+    value: 0
+  - key: EncouragedTeamwork
+    value: 0
+  - key: SuggestedSoloCareer
+    value: 0
+  - key: LearnMeditation
+    value: 0
+  - key: EncourageAlcoholism
+    value: 0
+  - key: ArrangeDrugDeal
+    value: 0
+  - key: BoughtHeroin
+    value: 0
+  - key: BoughtSugar
+    value: 0
+  - key: GaveHeroin
+    value: 0
+  - key: GaveSugar
+    value: 0
+  - key: SoberPete
+    value: 0
+  - key: EncourageMeditation
+    value: 0
+  - key: SearchGuitar
+    value: 0
+  - key: GotGuitar
+    value: 0
+  - key: ReturnedGuitar
+    value: 0
+  - key: Empathy
+    value: 0
+  - key: EncourageModeration
+    value: 0
+  inventory: []
+  subScenes:
+  - title: Talk with Rob
+    id: R1
+    location: 5
+    needAllRequirements: 0
+    necessaryBoolFlags: 
+    necessaryIntFlags: 
+  - title: Talk with Paul
+    id: JP1
+    location: 4
+    needAllRequirements: 0
+    necessaryBoolFlags: 
+    necessaryIntFlags: 
+  - title: Talk with Paige
+    id: P1
+    location: 3
+    needAllRequirements: 0
+    necessaryBoolFlags: 
+    necessaryIntFlags: 
+  - title: Talk with Bonzo
+    id: B1
+    location: 1
+    needAllRequirements: 0
+    necessaryBoolFlags: 
+    necessaryIntFlags: 
+  tutorialStage: 0
+  speedRunTime: 0
+  ending: -1
+  location: 0
+  targetLocation: -1
+  characterAtLocation: 0300000000000000010000000400000002000000
 --- !u!4 &5622636610547848002
 Transform:
   m_ObjectHideFlags: 0
@@ -17718,6 +17808,21 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8620789278933527762}
   m_Enabled: 1
+--- !u!4 &5973350022137704519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5518280740622218702}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6081600627527910241
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17741,109 +17846,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6394960104114281122}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &6241718698704217963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6247304633649998601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4012d12d56a12f4eb6f5745da7eda04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Terminal
-  integerFlags:
-  - key: Passion
-    value: 1
-  - key: Cool
-    value: 1
-  - key: Drugs
-    value: 1
-  - key: Guitar
-    value: 1
-  boolFlags:
-  - key: EncouragedSelfishness
-    value: 0
-  - key: EncouragedTeamwork
-    value: 0
-  - key: SuggestedSoloCareer
-    value: 0
-  - key: LearnMeditation
-    value: 0
-  - key: EncourageAlcoholism
-    value: 0
-  - key: ArrangeDrugDeal
-    value: 0
-  - key: BoughtHeroin
-    value: 0
-  - key: BoughtSugar
-    value: 0
-  - key: GaveHeroin
-    value: 0
-  - key: GaveSugar
-    value: 0
-  - key: SoberPete
-    value: 0
-  - key: EncourageModeration
-    value: 0
-  - key: SearchGuitar
-    value: 0
-  - key: GotGuitar
-    value: 0
-  - key: ReturnedGuitar
-    value: 0
-  - key: Empathy
-    value: 0
-  inventory: []
-  subScenes:
-  - title: Talk with Rob
-    id: R1
-    location: 5
-    needAllRequirements: 0
-    necessaryBoolFlags: 
-    necessaryIntFlags: 
-  - title: Talk with Paul
-    id: JP1
-    location: 4
-    needAllRequirements: 0
-    necessaryBoolFlags: 
-    necessaryIntFlags: 
-  - title: Talk with Paige
-    id: P1
-    location: 3
-    needAllRequirements: 0
-    necessaryBoolFlags: 
-    necessaryIntFlags: 
-  - title: Talk with Bonzo
-    id: B1
-    location: 1
-    needAllRequirements: 0
-    necessaryBoolFlags: 
-    necessaryIntFlags: 
-  tutorialStage: 0
-  speedRunTime: 0
-  ending: -1
-  location: 0
-  targetLocation: -1
-  characterAtLocation: 0300000000000000010000000400000002000000
---- !u!1 &6247304633649998601
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5243218405495959168}
-  - component: {fileID: 6241718698704217963}
-  m_Layer: 0
-  m_Name: Terminal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!199 &6342554534152732384
 ParticleSystemRenderer:
   serializedVersion: 7
@@ -18623,8 +18625,8 @@ SceneRoots:
   - {fileID: 419357339}
   - {fileID: 420894669}
   - {fileID: 1575471821}
-  - {fileID: 5243218405495959168}
   - {fileID: 1231896412}
   - {fileID: 3372924855998276443}
   - {fileID: 443545276}
   - {fileID: 758671168455717775}
+  - {fileID: 5973350022137704519}

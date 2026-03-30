@@ -13,8 +13,11 @@ public class DialogueOption : MonoBehaviour
 
     public bool CheckRequirement(Terminal t)
     {
-        if (statRequirement >= 0) return (t.integerFlags[statRequirement].value > statRequirementLevel);
-        if (flagRequirement >= 0) return (t.boolFlags[flagRequirement].value);
+        if (statRequirement >= 0)
+        {
+            if (flagRequirement >= 0) return (t.boolFlags[flagRequirement].value);
+            return (t.integerFlags[statRequirement].value > statRequirementLevel);
+        }
         return true;
     }
 }
