@@ -20,7 +20,7 @@ public class DynamicOptionsMenu : MonoBehaviour
             RectTransform rt = btnObj.GetComponent<RectTransform>();
 
             // Move each button down by 70 * index
-            rt.anchoredPosition = new Vector2(0, -(i+1)*40);
+            rt.anchoredPosition = new Vector2(0, -(i+1)*80);
 
             // Set text (TMP version)
             TextMeshProUGUI text = btnObj.GetComponentInChildren<TextMeshProUGUI>();

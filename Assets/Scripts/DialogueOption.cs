@@ -15,9 +15,13 @@ public class DialogueOption : MonoBehaviour
     {
         if (statRequirement >= 0)
         {
-            if (flagRequirement >= 0) return (t.boolFlags[flagRequirement].value);
+            if (flagRequirement >= 0) return (t.boolFlags[flagRequirement].value && t.integerFlags[statRequirement].value > statRequirementLevel);
             return (t.integerFlags[statRequirement].value > statRequirementLevel);
-        }
+        } else if (flagRequirement >= 0) return (t.boolFlags[flagRequirement].value);
+        
+        //Commenting just to check if unities' compiler works now
+
         return true;
+
     }
 }

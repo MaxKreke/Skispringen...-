@@ -39,7 +39,6 @@ public class TextManager : MonoBehaviour
 
         t = terminal.GetComponent<Terminal>();
         int location = t.location;
-        SetCharName(t.GetCharacter());
 
         Debug.Log(location);
 
@@ -50,7 +49,10 @@ public class TextManager : MonoBehaviour
         current = dc.transform.GetChild(location).GetChild(0).GetComponent<Dialogue>();
         Debug.Log(current);
 
+        SetCharName(t.GetCharacter());
+
         SetText();
+        TrySetCharacter();
     }
 
     public void SetText()

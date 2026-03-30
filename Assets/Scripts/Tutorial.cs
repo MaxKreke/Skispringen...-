@@ -11,6 +11,11 @@ public class Tutorial : MonoBehaviour
     public Hoop tutRingScript;
     public GameObject haus;
 
+    private void Start()
+    {
+        if(!t)t = GameObject.Find("Terminal").GetComponent<Terminal>();
+    }
+
     public void Next()
     {
         switch (t.tutorialStage)

@@ -17,11 +17,11 @@ public class CharacterPortrait : MonoBehaviour
             t = terminal.GetComponent<Terminal>();
             int location = t.location;
 
-            if (location > 0)
-            {
-                int character = t.GetCharacter();
-                this.GetComponent<RawImage>().texture = tex[character];
-            }
+            //if (location > 0)
+            //{
+            //    int character = t.GetCharacter();
+            //    this.GetComponent<RawImage>().texture = tex[character];
+            //}
         }
     }
 
