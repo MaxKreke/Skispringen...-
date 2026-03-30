@@ -48,9 +48,9 @@ public class Fly : MonoBehaviour
 
         t = GameObject.Find("Terminal").GetComponent<Terminal>();
 
-        dragReduction = (int)t.integerFlags[3].value;
-        handling = (int)t.integerFlags[1].value;
-        acceleration = (int)t.integerFlags[0].value;
+        dragReduction = (float)t.integerFlags[3].value;
+        handling = computeHandling(t.integerFlags[1].value);
+        acceleration = (float)t.integerFlags[0].value;
 
         if (t.tutorialStage > 0)
         {
@@ -63,6 +63,11 @@ public class Fly : MonoBehaviour
             }
         }
         mainCam = Camera.main;
+    }
+
+    private float computeHandling(int flag)
+    {
+        return (1f + 2f * (Mathf.Log((float)flag) / Mathf.Log(5)));
     }
 
     private void ApplyInputs()

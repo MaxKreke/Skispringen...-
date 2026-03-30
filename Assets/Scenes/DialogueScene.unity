@@ -1685,8 +1685,7 @@ MonoBehaviour:
   next: {fileID: 0}
   dialogueContent:
   - character: 0
-    words: "\u0993\u0981 \u0913\u092E\u094D \uA8FD \u0AD0 \u0A74 cacophonous music
-      plays, then stops"
+    words: Cacophonous music plays, then stops
   - character: 2
     words: Well, that was shit.
   - character: 1
@@ -3149,8 +3148,8 @@ MonoBehaviour:
   next: {fileID: 0}
   dialogueContent:
   - character: 0
-    words: And so, after just 5 sessions of meditation, you became enlightened and
-      became a Buddha, while Paul stayed behind, walking the world as a Bodhisattva,
+    words: And thus, after just 5 sessions of meditation, you became enlightened
+      and became a Buddha, while Paul stayed behind, walking the world as a Bodhisattva,
       alleviating the suffering of people wherever he went.
   - character: 0
     words: Or maybe you are lying in the mountains, drooling and will wake up in

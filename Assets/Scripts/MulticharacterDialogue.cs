@@ -59,13 +59,18 @@ public class MulticharacterDialogue : Dialogue
         Terminal t = GameObject.Find("Terminal").GetComponent<Terminal>();
         if (gainsStat >= 0)
         {
-            t.integerFlags[gainsStat].value++;
             string statName = t.integerFlags[gainsStat].key;
-
-            
-            tm.SetText(statName + " increased by 1.");
             tm.SetCharPort(0);
             tm.SetCharName(0);
+
+            if (t.integerFlags[gainsStat].value > 5)
+            {
+                tm.SetText(statName + " Already at Maximum.");
+            }
+            else{
+                t.integerFlags[gainsStat].value++;
+                tm.SetText(statName + " increased by 1.");
+            }
 
             gainsStat = -1;
             return;
