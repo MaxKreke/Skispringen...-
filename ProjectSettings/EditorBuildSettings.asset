@@ -13,7 +13,7 @@ EditorBuildSettings:
     guid: d2bdc63b31cece846b7e1f7604297cd0
   - enabled: 1
     path: Assets/Scenes/FlyScene.unity
-    guid: 25349580687316f40b5f05b899d358d7
+    guid: 8caa27ab38555b54da31f22a258e4994
   - enabled: 1
     path: Assets/Scenes/DialogueScene.unity
     guid: 9ec271bdfe2dabc499cfba1d4a33aaa3
@@ -29,5 +29,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: Assets/Scenes/ScreenshotScene.unity
+    guid: 25349580687316f40b5f05b899d358d7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
