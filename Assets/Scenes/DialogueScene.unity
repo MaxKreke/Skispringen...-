@@ -3630,15 +3630,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MulticharacterDialogue
   next: {fileID: 0}
   dialogueContent:
-  - character: 5
+  - character: 9
     words: "At any rate, I\u2019m glad you got me the wrong stuff."
-  - character: 5
+  - character: 9
     words: "Don\u2019t know what that granddad character cuts the h with but it messed
       me up something fierce."
-  - character: 5
+  - character: 9
     words: "If you don\u2019t mind I\u2019d like to be alone now. Been a while since
       I was the boss in my own head."
-  - character: 5
+  - character: 9
     words: "But if you don\u2019t mind I\u2019d like to work with you in the future.
       Guitarists are a rare breed these days."
   - character: 0
@@ -3985,9 +3985,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MulticharacterDialogue
   next: {fileID: 0}
   dialogueContent:
-  - character: 5
+  - character: 9
     words: Oh right, memory is still a bit hazy.
-  - character: 5
+  - character: 9
     words: You do know brown sugar means heroin, yeah?
   state: 0
   setsFlag: -1
@@ -8792,6 +8792,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 36dd856bc7d1d79418e6d91f877a5d1c, type: 3}
   - {fileID: 2800000, guid: ec1b3dae6cdb2844589a47fe222ec3d6, type: 3}
   - {fileID: 2800000, guid: 787870075d079e241aa9eeaee1e40364, type: 3}
+  - {fileID: 2800000, guid: 85025aa2982df3249b0a13233d977173, type: 3}
 --- !u!1 &1529514479
 GameObject:
   m_ObjectHideFlags: 0
@@ -11830,7 +11831,7 @@ MonoBehaviour:
   - character: 0
     words: Against your better judgement, you decide to check up on Pete. You find
       him plucking his guitar in front of his home.
-  - character: 5
+  - character: 9
     words: Greetings, do I know you?
   state: 0
   setsFlag: -1

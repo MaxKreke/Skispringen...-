@@ -29,6 +29,7 @@ public class TextManager : MonoBehaviour
         "You",
         "Octo-Gendarme",
         "Opa",
+        "Pete",
     };
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
